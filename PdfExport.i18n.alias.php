@@ -3,10 +3,10 @@
  * Aliases for Special:PdfExport
  *
  * @addtogroup Extensions
- */
-$aliases = array();
+ *
+ $aliases = array();
 
-/** English */
+ /** English */
 $aliases['en'] = array(
-	'PdfPrint' => array( 'Pdfprint' ,'Pdf Export'),
+	'PdfPrint' => array('Pdfprint', 'Pdf Export'),
 );

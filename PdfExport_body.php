@@ -1,240 +1,202 @@
 <?php
-// define maximum width of images
-if(!defined('MAX_IMAGE_WIDTH'))
-		define("MAX_IMAGE_WIDTH", 670);
+if (!defined('MEDIAWIKI'))
+	die();
 
-if ( !defined( 'MEDIAWIKI' ) ) 
-	 die();
-
-global $wgPdfExportAttach, $wgPdfExportHttpsImages;
-$wgPdfExportAttach = false; // set to true if you want output as an attachment
-$wgPdfExportHttpsImages = false; // set to true if page is on a HTTPS server and contains images that are on the HTTPS server and also
-								 // reachable with HTTP
-
+/**
+ * A special page to generate a PDF version of a page. The class will use PrincePDF, DomPdf, or HTMLDoc in that order.
+ *
+ * @author Thomas Hempel
+ * @author Andreas Hagmann
+ * @author Dumpydooby
+ * @author Christian Neubauer
+ */
 class SpecialPdf extends SpecialPage {
 	var $title;
 	var $article;
 	var $html;
 	var $parserOptions;
 	var $bhtml;
-	public $iswindows;
 
-	function __construct() {
-		global $iswindows;
-		SpecialPage::SpecialPage( 'PdfPrint' );
-		$os = getenv ("SERVER_SOFTWARE");
-		$iswindows = strstr ($os, "Win32");
+	/**
+	 * A converter to actually do the Pdf generation.
+	 */
+	var $converter;
+
+	/**
+	 * Setup the special page. Tries to detect a PDF generation tool to use. Prefers in order: PrincePDF, HtmlDoc, DomPdf.
+	 */
+	function SpecialPdf () {
+		parent::__construct('PdfPrint');
+		$this->converter = PdfConverterFactory::getPdfConverter();
 	}
 
-	public function save1page ( $page ) {
-		global $wgUser;
-		global $wgParser;
-		global $wgScriptPath;
-		global $wgServer;
-		global $wgPdfExportHttpsImages;
-
-		$title = Title::newFromText( $page );
-		if( is_null( $title ) ) {
-			return null;
-		}
-		if( !$title->userCanRead() ){
-			return null;
-		}
-		$article = new Article ($title);
-		$parserOptions = ParserOptions::newFromUser( $wgUser );
-		$parserOptions->setEditSection( false );
-		$parserOptions->setTidy(true);
-		$wgParser->mShowToc = false;
-		$parserOutput = $wgParser->parse( $article->preSaveTransform( $article->getContent() ) ."\n\n",
-						$title, $parserOptions );
-
-		$bhtml = $parserOutput->getText();
-		// XXX Hack to thread the EUR sign correctly
-		$bhtml = str_replace(chr(0xE2) . chr(0x82) . chr(0xAC), chr(0xA4), $bhtml);
-		$bhtml = utf8_decode($bhtml);
-
-		// add the '"'. so links pointing to other wikis do not get erroneously converted.
-		$bhtml = str_replace ('"'.$wgScriptPath, '"'.$wgServer . $wgScriptPath, $bhtml);
-		$bhtml = str_replace ('/w/',$wgServer . '/w/', $bhtml);
-
-// Comment out previous two code lines if wiki is on the root folder and uncomment the following lines
-// global $wgUploadPath,$wgScript;
-// $bhtml = str_replace ($wgUploadPath, $wgServer.$wgUploadPath,$bhtml);
-// if (strlen($wgScriptPath)>0)
-//      $pathToTitle=$wgScriptPath;
-// else $pathToTitle=$wgScript;
-//      $bhtml = str_replace ("href=\"$pathToTitle", 'href="'.$wgServer.$pathToTitle, $bhtml);
-
-		// removed heights of images
-		$bhtml = preg_replace ('/height="\d+"/', '', $bhtml);
-		// set upper limit for width
-		$bhtml = preg_replace ('/width="(\d+)"/e', '"width=\"".($1> MAX_IMAGE_WIDTH ?  MAX_IMAGE_WIDTH : $1)."\""', $bhtml);
-
-		if ($wgPdfExportHttpsImages) {
-			$bhtm = str_replace('img src=\"https:\/\/','img src=\"http:\/\/', $bhtml);
-		}
-
-		$html = "<html><head><title>" . utf8_decode($page) . "</title></head><body>" . $bhtml . "</body></html>";
-		return $html;
-	}
-
-	function outputpdf ($pages, $landscape, $permissions, $fontface, $fontsize, $margintop, $marginsides, $marginbottom, $size, $filename) {
-		global $iswindows;
-		global $wgPdfExportAttach;
-		global $wgRequest;
-		global $wgPdfExportBackground;
-
-		$returnStatus = 0;
-		$pagestring = "";
-		$pagefiles = array();
-		$foundone = false;
-
-		foreach ($pages as $pg) {
-			$pagestring .= $this->save1page ($pg);
-			if ($pagestring == null) {
-				continue;
-			}
-		}
-
-		if ($pagestring == "") {
-			return;
-		}
-		putenv("HTMLDOC_NOCGI=1");
-
-		# Write the content type to the client...
-		header("Content-Type: application/pdf");
-		header(sprintf('Content-Disposition: attachment; filename="' . $filename . '"', $wgRequest->getVal('page')));
-
-		$htmldoc_descriptorspec = array(
-										// stdin is a pipe that the child will read from
-										0 => array("pipe", "r"),
-										// stdout is a pipe that the child will write to */
-										1 => array("pipe", "w"));
-		# Run HTMLDOC to provide the PDF file to the user...
-		$htmldoc_process = proc_open("htmldoc -t pdf14 --charset iso-8859-15 --color --quiet --jpeg --bodyfont " . $fontface . " --textfont " . $fontface . " --headingfont " . $fontface . " --fontsize " . $fontsize . " --bodyimage " . $wgPdfExportBackground . " --top " . $margintop . " --left " . $marginsides . " --right " . $marginsides . " --bottom " . $marginbottom . " --permissions " . $permissions . " --size " . $size . " " . $landscape . "--webpage -", $htmldoc_descriptorspec, $pipes);
-
-		fwrite($pipes[0], $pagestring);
-		fclose($pipes[0]);
-
-		fpassthru($pipes[1]);
-		fclose($pipes[1]);
-
-		$returnStatus = proc_close($htmldoc_process);
-
-		if($returnStatus == 1) {
-			error_log("Generating PDF failed, check path to HTMLDoc, return status was:" . $returnStatus, 0);
-		}
-		flush();
-		foreach ($pagefiles as $pgf) {
-			unlink ($pgf);
-		}
-	}
-
-	function execute( $par ) {
+	/**
+	 * Generate a PDF version of the selected page.
+	 *
+	 * @param string $par The page name to convert. If this is not set, then the 'page' or 'pagel' parameters of the URL should be.
+	 */
+	public function execute ($par) {
 		global $wgRequest;
 		global $wgOut;
 
+		// For backwards compatibility
+		wfLoadExtensionMessages('PdfPrint');
+
+		if ($this->converter == null) {
+			$wgOut->setPageTitle(wfMsg('pdfprint_error'));
+			$wgOut->addHtml(wfMsg('pdf_export_no_converter_found'));
+			return;
+		}
+
+		$pages = null;
 		$dopdf = false;
+
 		if ($wgRequest->wasPosted()) {
-			$pagel = $wgRequest->getText ('pagel');
-			$pages = array_filter( explode( "\n", $pagel ), 'wfFilterPage1' );
-			$filename = $wgRequest->getText ('filename');
-			$fontface = $wgRequest->getText ('fontface');
-			$fontsize = $wgRequest->getText ('fontsize');
-			$size = $wgRequest->getText ('Size', 'Letter');
-			$margintop = $wgRequest->getText ('margintop');
-			$marginsides = $wgRequest->getText ('marginsides');
-			$marginbottom = $wgRequest->getText ('marginbottom');
-			$permissions = $wgRequest->getVal ('permissions');
-			$orientations = $wgRequest->getVal ('orientation');
-			if ($orientations == 'landscape') {
-				$orientation = " --landscape --browserwidth 1200 ";
-			} else {
-				$orientation = " --portrait ";
-			}
+			// Find a list of pages
+			$pagel = $wgRequest->getText('pagel');
+			$pages = array_filter(explode("\n", $pagel), 'wfFilterPageList');
+
+			if (count($pages) == 0) {
+				// @TODO throw error
+				}
+
+			// Use user/special page supplied options
+			$options = array(
+				'filename' => $wgRequest->getText ('filename'),
+				'size'     => $wgRequest->getText ('Size', 'Letter'),
+				'fontface' => $wgRequest->getText ('fontface'),
+				'fontsize' => $wgRequest->getText ('fontsize'),
+				'margintop' => $wgRequest->getText ('margintop'),
+				'marginsides' => $wgRequest->getText ('marginsides'),
+				'marginbottom' => $wgRequest->getText ('marginbottom'),
+				'orientation' => $wgRequest->getVal ('orientation'),
+				'pass_protect' => $wgRequest->getVal ('pass_protect'),
+				'owner_pass' => $wgRequest->getVal ('owner_pass'),
+				'user_pass' => $wgRequest->getVal ('user_pass'),
+				'perm_print' => $wgRequest->getVal ('perm_print'),
+				'perm_modify' => $wgRequest->getVal ('perm_modify'),
+				'perm_copy' => $wgRequest->getVal ('perm_copy'),
+				'perm_annotate' => $wgRequest->getVal ('perm_annotate')
+			);
+
 			$dopdf = true;
 		} else {
-			$page = isset( $par ) ? $par : $wgRequest->getText( 'page' );
-			if ($page != "") {
-				$dopdf = true;
-			}
-			$pages = array ($page);
-			$fontface = "times";
-			$fontsize = "11";
-			$margintop = "20mm";
-			$marginsides = "20mm";
-			$marginbottom = "20mm";
-			$permissions = "all";
+			$page = isset($par) ? $par : $wgRequest->getText('page');
+			$pages = array($page);
 
-			$orientation = " --portrait ";
-			$size = "A4";
-			$filename = "%s.pdf";
+			if (count($pages) == 0) {
+				// @TODO throw error
+				}
+
+			// Use some default options
+			$options = array(
+				'page'          => $page,
+				'filename'      => $page,
+				'fontface'      => 'times',
+				'fontsize'      => '12',
+				'size'          => 'letter',
+				'margintop'     => '20',
+				'marginsides'   => '20',
+				'marginbottom'  => '20',
+				'orientation'   => 'portrait',
+				'pass_protect'  => 'no',
+				'owner_pass'    => '',
+				'user_pass'     => '',
+				'perm_print'    => 'yes',
+				'perm_modify'   => 'yes',
+				'perm_copy'     => 'yes',
+				'perm_annotate' => 'yes'
+			);
+
+			$dopdf = true;
 		}
 
 		if ($dopdf) {
 			$wgOut->setPrintable();
-			$wgOut->disable();
-
-			$this->outputpdf ($pages, $orientation, $permissions, $fontface, $fontsize, $margintop, $marginsides, $marginbottom, $size, $filename);
+			$this->converter->initialize($options);
+			$this->converter->outputPdf($pages, $options);
 			return;
 		}
 
-		$self = SpecialPage::getTitleFor( 'PdfPrint' );
-		$wgOut->addHtml( wfMsgExt( 'pdf_print_text', 'parse' ) );
+		$this->outputForm();
+	}
 
-		$form = Xml::openElement( 'form', array( 'method' => 'post',
-												 'action' => $self->getLocalUrl( 'action=submit' ) ) );
+	/**
+	 * Generate a form for the user to create a PDF document.
+	 */
+	protected function outputForm () {
+		global $wgOut;
 
-		$form .= Xml::openElement( 'textarea', array( 'name' => 'pagel', 'cols' => 40, 'rows' => 10 ) );
-		$form .= Xml::closeElement( 'textarea' );
+		// TODO add a font face and font size input
+
+		$self = SpecialPage::getTitleFor('PdfPrint');
+		$wgOut->setPageTitle(wfMsg('pdfprint'));
+		$wgOut->addHtml(wfMsgExt('pdf_print_text', 'parse'));
+
+		$form = Xml::openElement('form', array('method' => 'post', 'action' => $self->getLocalUrl('action=submit')));
+		$form .= Xml::openElement('input', array('type' => 'text', 'name' => 'pagel', 'value' => '', 'size' => '50'));
+		$form .= Xml::closeElement('input');
 		$form .= '<br />';
-		$form .= '<br />' . wfMsg('pdf_size') .": ";
-		$form .= Xml::listDropDown ('Size', wfMsg ('pdf_size_options'),'', wfMsg('pdf_size_default'));
-		$form .= Xml::radioLabel(wfMsg ('pdf_portrait'), 'orientation' , 'portrait' , 'portrait', true);
-		$form .= Xml::radioLabel(wfMsg ('pdf_landscape'), 'orientation' , 'landscape' , 'landscape', false);
+		$form .= '<br />'.wfMsg('pdf_size').": ";
+		$form .= Xml::listDropDown('Size', wfMsg('pdf_size_options'), '', wfMsg('pdf_size_default'));
+		$form .= Xml::radioLabel(wfMsg('pdf_portrait'), 'orientation', 'portrait', 'portrait', true);
+		$form .= Xml::radioLabel(wfMsg('pdf_landscape'), 'orientation', 'landscape', 'landscape', false);
 		$form .= '<br />';
-		$form .= wfMsg ('pdf_fontface_label').": ";
-		$form .= Xml::listDropDown ('fontface', wfMsg ('pdf_fontface_options'),'', wfMsg('pdf_fontface_default'));
-		$form .= " " .wfMsg ('pdf_fontsize_label').": ";
-		$form .= Xml::openElement( 'input', array( 'type'=>'text', 'name' => 'fontsize', 'value' => '11' ) );
-		$form .= Xml::closeElement( 'input' );
-		$form .= '<br />';
-		$form .= wfMsg ('pdf_permissions_label').":";
-		$form .= Xml::radioLabel(wfMsg ('pdf_permissions_all'), 'permissions' , 'all' , 'all', true);
-		# "no-copy,print" results in a not-printable PDF (tested in KPDF & Acrobat Reader 9)
-		//$form .= Xml::radioLabel(wfMsg ('pdf_permissions_print'), 'permissions' , 'no-copy,print' , 'no-copy,print', false);
-		$form .= Xml::radioLabel(wfMsg ('pdf_permissions_none'), 'permissions' , 'none' , 'none', false);
-		$form .= '<br />';
-		$form .= wfMsg ('pdf_margins_label').":";
+		$form .= wfMsg('pdf_margins_label').":";
 		$form .= '<ul>';
 		$form .= ' <li>';
-		$form .= Xml::openElement( 'input', array( 'type'=>'text', 'name' => 'margintop', 'value' => '20mm' ) );
-		$form .= Xml::closeElement( 'input' );
-		$form .= ' (' . wfMsg ('pdf_margins_label_top') . ')';
+		$form .= Xml::openElement('input', array('type' => 'text', 'name' => 'margintop', 'value' => '20'));
+		$form .= Xml::closeElement('input');
+		$form .= ' ('.wfMsg('pdf_margins_label_top').')';
 		$form .= ' </li>';
 		$form .= ' <li>';
-		$form .= Xml::openElement( 'input', array( 'type'=>'text', 'name' => 'marginsides', 'value' => '20mm' ) );
-		$form .= Xml::closeElement( 'input' );
-		$form .= ' (' . wfMsg ('pdf_margins_label_sides') . ')';
+		$form .= Xml::openElement('input', array('type' => 'text', 'name' => 'marginsides', 'value' => '20'));
+		$form .= Xml::closeElement('input');
+		$form .= ' ('.wfMsg('pdf_margins_label_sides').')';
 		$form .= ' </li>';
 		$form .= ' <li>';
-		$form .= Xml::openElement( 'input', array( 'type'=>'text', 'name' => 'marginbottom', 'value' => '20mm' ) );
-		$form .= Xml::closeElement( 'input' );
-		$form .= ' (' . wfMsg ('pdf_margins_label_bottom') . ')';
+		$form .= Xml::openElement('input', array('type' => 'text', 'name' => 'marginbottom', 'value' => '20'));
+		$form .= Xml::closeElement('input');
+		$form .= ' ('.wfMsg('pdf_margins_label_bottom').')';
 		$form .= ' </li>';
 		$form .= '</ul>';
 		$form .= '<br />';
+		$form .= wfMsg('pdf_pass_protect_label').":";
+		$form .= Xml::radioLabel(wfMsg('pdf_pass_protect_yes'), 'pass_protect', 'yes', 'no', false);
+		$form .= Xml::radioLabel(wfMsg('pdf_pass_protect_no'), 'pass_protect', 'yes', 'no', true);
+		$form .= '<br />';
+		$form .= wfMsg('pdf_owner_pass_label').":";
+		$form .= Xml::openElement('input', array('type' => 'password', 'name' => 'owner_pass', 'value' => '', 'size' => '50'));
+		$form .= Xml::closeElement('input');
+		$form .= '<br />';
+		$form .= wfMsg('pdf_user_pass_label').":";
+		$form .= Xml::openElement('input', array('type' => 'password', 'name' => 'user_pass', 'value' => '', 'size' => '50'));
+		$form .= Xml::closeElement('input');
+		$form .= '<br />';
+		$form .= wfMsg('pdf_perm_print_label').":";
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_print_yes'), 'perm_print', 'yes', 'no', true);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_print_no'), 'perm_print', 'yes', 'no', false);
+		$form .= '<br />';
+		$form .= wfMsg('pdf_perm_modify_label').":";
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_modify_yes'), 'perm_modify', 'yes', 'no', true);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_modify_no'), 'perm_modify', 'yes', 'no', false);
+		$form .= '<br />';
+		$form .= wfMsg('pdf_perm_copy_label').":";
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_copy_yes'), 'perm_copy', 'yes', 'no', true);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_copy_no'), 'perm_copy', 'yes', 'no', false);
+		$form .= '<br />';
+		$form .= wfMsg('pdf_perm_annotate_label').":";
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_annotate_yes'), 'perm_annotate', 'yes', 'no', true);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_annotate_no'), 'perm_annotate', 'yes', 'no', false);
+		$form .= '<br />';
+		$form .= '<br />';
 		// input field for name of PDF
-		$form .= wfMsg ('pdf_filename').": ";
-		$form .= Xml::openElement( 'input', array( 'type'=>'text', 'name' => 'filename', 'value' => 'print.pdf' ) );
-		$form .= Xml::closeElement( 'input' );
+		$form .= wfMsg('pdf_filename').": ";
+		$form .= Xml::openElement('input', array('type' => 'text', 'name' => 'filename', 'value' => wfMsg('pdf_filename')));
+		$form .= Xml::closeElement('input');
 		$form .= '<br /><br />';
-		$form .= Xml::submitButton( wfMsg( 'pdf_submit' ) );
-		$form .= Xml::closeElement( 'form' );
-		$wgOut->addHtml( $form );
+		$form .= Xml::submitButton(wfMsg('pdf_submit'));
+		$form .= Xml::closeElement('form');
+		$wgOut->addHtml($form);
 	}
-}
-
-function wfFilterPage1( $page ) {
-	return $page !== '' && $page !== null;
 }
