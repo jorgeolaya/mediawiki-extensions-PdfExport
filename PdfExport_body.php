@@ -44,7 +44,7 @@ class SpecialPdf extends SpecialPage {
 
 		if ($this->converter == null) {
 			$wgOut->setPageTitle(wfMsg('pdfprint_error'));
-			$wgOut->addHtml(wfMsg('pdf_export_no_converter_found'));
+			$wgOut->addHtml('<span class="errorbox">'.wfMsg('pdf_export_no_converter_found').'</span>');
 			return;
 		}
 
