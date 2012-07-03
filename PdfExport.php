@@ -29,6 +29,8 @@ $wgPdfExportPrincePhpInterface = false; // Path to the prince.php file from the 
 
 $wgPdfExportMwLibPath = false; // Path to the mw-render binary
 
+$wgPdfExportMPdf = false; // Path to the main mPDF.php file
+
 $wgPdfExportDomPdfConfigFile = false; // Path to the DomPdf config file
 
 $wgPdfExportHtmlDocPath = false; // Path to the htmldoc binary
@@ -41,6 +43,7 @@ $wgAutoloadClasses['PdfConverter'] = $dir.'converters/PdfConverter.php';
 $wgAutoloadClasses['PrincePdfConverter'] = $dir.'converters/PrincePdfConverter.php';
 $wgAutoloadClasses['MwLibPdfConverter'] = $dir.'converters/MwLibPdfConverter.php';
 $wgAutoloadClasses['DomPdfConverter'] = $dir.'converters/DomPdfConverter.php';
+$wgAutoloadClasses['MPdfConverter'] = $dir . 'converters/MPdfConverter.php';
 $wgAutoloadClasses['HtmlDocPdfConverter'] = $dir.'converters/HtmlDocPdfConverter.php';
 
 # Add a couple hooks to show the "Print as Pdf" links in the sidebar

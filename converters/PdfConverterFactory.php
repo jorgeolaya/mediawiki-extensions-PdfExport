@@ -11,7 +11,7 @@ class PdfConverterFactory {
 	 * @return A PdfConverter or null if none are installed.
 	 */
 	public static function getPdfConverter() {
-		global $wgPdfExportPrincePath, $wgPdfExportMwLibPath, $wgPdfExportHtmlDocPath, $wgPdfExportDomPdfConfigFile;
+		global $wgPdfExportPrincePath, $wgPdfExportMwLibPath, $wgPdfExportHtmlDocPath, $wgPdfExportDomPdfConfigFile, $wgPdfExportMPdf;
 		if ($wgPdfExportPrincePath) {
 			return new PrincePdfConverter();
 		}
@@ -22,6 +22,10 @@ class PdfConverterFactory {
 
 		if ($wgPdfExportDomPdfConfigFile && file_exists($wgPdfExportDomPdfConfigFile)) {
 			return new DomPdfConverter();
+		}
+
+		if ($wgPdfExportMPdf && file_exists($wgPdfExportMPdf) ) {
+			return new MPdfConverter();
 		}
 
 		if ($wgPdfExportHtmlDocPath) {
