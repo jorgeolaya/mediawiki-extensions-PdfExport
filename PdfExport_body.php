@@ -49,16 +49,15 @@ class SpecialPdf extends SpecialPage {
 		}
 
 		$pages = null;
-		$dopdf = false;
+		$dopdf = true;
 
 		if ($wgRequest->wasPosted()) {
 			// Find a list of pages
 			$pagel = $wgRequest->getText('pagel');
 			$pages = array_filter(explode("\n", $pagel), 'wfFilterPageList');
-
 			if (count($pages) == 0) {
-				// @TODO throw error
-				}
+				$dopdf = false;
+			}
 
 			// Use user/special page supplied options
 			$options = array(
@@ -78,15 +77,13 @@ class SpecialPdf extends SpecialPage {
 				'perm_copy' => $wgRequest->getVal ('perm_copy'),
 				'perm_annotate' => $wgRequest->getVal ('perm_annotate')
 			);
-
-			$dopdf = true;
 		} else {
 			$page = isset($par) ? $par : $wgRequest->getText('page');
-			$pages = array($page);
-
-			if (count($pages) == 0) {
-				// @TODO throw error
-				}
+			if ($page == '') {
+				$dopdf = false;
+			} else {
+				$pages = array($page);
+			}
 
 			// Use some default options
 			$options = array(
@@ -107,8 +104,6 @@ class SpecialPdf extends SpecialPage {
 				'perm_copy'     => 'yes',
 				'perm_annotate' => 'yes'
 			);
-
-			$dopdf = true;
 		}
 
 		if ($dopdf) {
