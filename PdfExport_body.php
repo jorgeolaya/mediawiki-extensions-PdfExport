@@ -129,8 +129,8 @@ class SpecialPdf extends SpecialPage {
 		$wgOut->addHtml(wfMsgExt('pdf_print_text', 'parse'));
 
 		$form = Xml::openElement('form', array('method' => 'post', 'action' => $self->getLocalUrl('action=submit')));
-		$form .= Xml::openElement('input', array('type' => 'text', 'name' => 'pagel', 'value' => '', 'size' => '50'));
-		$form .= Xml::closeElement('input');
+		$form .= Xml::openElement('textarea', array('name' => 'pagel', 'value' => '', 'style' => 'width:30em;'));
+		$form .= Xml::closeElement('textarea');
 		$form .= '<br />';
 		$form .= '<br />'.wfMsg('pdf_size').": ";
 		$form .= Xml::listDropDown('Size', wfMsg('pdf_size_options'), '', wfMsg('pdf_size_default'));
@@ -157,8 +157,8 @@ class SpecialPdf extends SpecialPage {
 		$form .= '</ul>';
 		$form .= '<br />';
 		$form .= wfMsg('pdf_pass_protect_label').":";
-		$form .= Xml::radioLabel(wfMsg('pdf_pass_protect_yes'), 'pass_protect', 'yes', 'no', false);
-		$form .= Xml::radioLabel(wfMsg('pdf_pass_protect_no'), 'pass_protect', 'yes', 'no', true);
+		$form .= Xml::radioLabel(wfMsg('pdf_pass_protect_yes'), 'pass_protect', 'yes', 'pass_protect', false);
+		$form .= Xml::radioLabel(wfMsg('pdf_pass_protect_no'), 'pass_protect', 'no', 'pass_protect', true);
 		$form .= '<br />';
 		$form .= wfMsg('pdf_owner_pass_label').":";
 		$form .= Xml::openElement('input', array('type' => 'password', 'name' => 'owner_pass', 'value' => '', 'size' => '50'));
@@ -169,20 +169,20 @@ class SpecialPdf extends SpecialPage {
 		$form .= Xml::closeElement('input');
 		$form .= '<br />';
 		$form .= wfMsg('pdf_perm_print_label').":";
-		$form .= Xml::radioLabel(wfMsg('pdf_perm_print_yes'), 'perm_print', 'yes', 'no', true);
-		$form .= Xml::radioLabel(wfMsg('pdf_perm_print_no'), 'perm_print', 'yes', 'no', false);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_print_yes'), 'perm_print', 'yes', 'perm_print', true);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_print_no'), 'perm_print', 'no', 'perm_print', false);
 		$form .= '<br />';
 		$form .= wfMsg('pdf_perm_modify_label').":";
-		$form .= Xml::radioLabel(wfMsg('pdf_perm_modify_yes'), 'perm_modify', 'yes', 'no', true);
-		$form .= Xml::radioLabel(wfMsg('pdf_perm_modify_no'), 'perm_modify', 'yes', 'no', false);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_modify_yes'), 'perm_modify', 'yes', 'perm_modify', true);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_modify_no'), 'perm_modify', 'no', 'perm_modify', false);
 		$form .= '<br />';
 		$form .= wfMsg('pdf_perm_copy_label').":";
-		$form .= Xml::radioLabel(wfMsg('pdf_perm_copy_yes'), 'perm_copy', 'yes', 'no', true);
-		$form .= Xml::radioLabel(wfMsg('pdf_perm_copy_no'), 'perm_copy', 'yes', 'no', false);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_copy_yes'), 'perm_copy', 'yes', 'perm_copy', true);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_copy_no'), 'perm_copy', 'no', 'perm_copy', false);
 		$form .= '<br />';
 		$form .= wfMsg('pdf_perm_annotate_label').":";
-		$form .= Xml::radioLabel(wfMsg('pdf_perm_annotate_yes'), 'perm_annotate', 'yes', 'no', true);
-		$form .= Xml::radioLabel(wfMsg('pdf_perm_annotate_no'), 'perm_annotate', 'yes', 'no', false);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_annotate_yes'), 'perm_annotate', 'yes', 'perm_annotate', true);
+		$form .= Xml::radioLabel(wfMsg('pdf_perm_annotate_no'), 'perm_annotate', 'no', 'perm_annotate', false);
 		$form .= '<br />';
 		$form .= '<br />';
 		// input field for name of PDF

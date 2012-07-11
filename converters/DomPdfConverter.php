@@ -37,6 +37,7 @@ class DomPdfConverter extends PdfConverter {
 		foreach ($pages as $pg) {
 			$pagestring .= $this->getPageHtml($pg, $options);
 		}
+		# TODO enable support for margins
 		$header_footer = <<<SCRIPT
 <script type="text/php">
 if ( isset(\$pdf) ) {
@@ -91,7 +92,27 @@ SCRIPT;
 		$dompdf->set_paper( strtolower( $options['size'] ), $options['orientation']);
 		$dompdf->load_html($html);
 		$dompdf->render();
-		$dompdf->stream(utf8_decode($pages[0]) . ".pdf", array('Attachment'=>($wgPdfExportAttach?1:0)));
+		$perms = array();
+		if( $options['pass_protect'] == 'yes' ) {
+			if( $options['perm_print'] == 'no' ) {
+				$perms[] = 'no-print';
+			}
+			if( $options['perm_modify'] == 'no' ) {
+				$perms[] = 'no-modify';
+			}
+			if( $options['perm_copy'] == 'no' ) {
+				$perms[] = 'no-copy';
+			}
+			if( $options['perm_annotate'] == 'no' ) {
+				$perms[] = 'no-annotate';
+			}
+			if( count( $perms ) == 0 ) {
+				$dompdf->get_canvas()->get_cpdf()->setEncryption($options['user_pass'], $options['owner_pass'], array('all'));
+			} else {
+				$dompdf->get_canvas()->get_cpdf()->setEncryption($options['user_pass'], $options['owner_pass'], $perms);
+			}
+		}
+		$dompdf->stream(utf8_decode($options['filename']) . ".pdf", array('Attachment'=>($wgPdfExportAttach?1:0)));
 		#error_reporting( $old_error_level );
 	}
 	

@@ -46,6 +46,26 @@ class MPdfConverter extends PdfConverter {
 
 		$mpdf = new mPDF();
 		$mpdf->WriteHTML($html);
+	
+		if( $options['pass_protect'] == 'yes' ) {
+			if( $options['perm_print'] == 'yes' ) {
+				$perms[] = 'print';
+			}
+			if( $options['perm_modify'] == 'yes' ) {
+				$perms[] = 'modify';
+			}
+			if( $options['perm_copy'] == 'yes' ) {
+				$perms[] = 'copy';
+			}
+			if( $options['perm_annotate'] == 'yes' ) {
+				$perms[] = 'annot-forms';
+			}
+			if( count( $perms ) == 0 ) {
+				$mpdf->SetProtection(array(), $options['user_pass'], $options['owner_pass']);
+			} else {
+				$mpdf->SetProtection($perms, $options['user_pass'], $options['owner_pass']);
+			}
+		}
 		$mpdf->Output();
 
 		$pdf = ob_get_contents();

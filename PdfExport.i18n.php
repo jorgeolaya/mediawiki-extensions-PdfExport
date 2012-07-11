@@ -14,7 +14,10 @@ $messages['en'] = array(
 	'pdf_fontface_default'           => 'times',
 	'pdf_fontface_options'           => 'times
 courier
-helvetica',
+helvetica
+monospace
+sans
+serif',
 	'pdf_fontsize_label'             => 'Fontsize',
 	'pdf_margins_label'              => 'Margins (Displays in millimeters)',
 	'pdf_margins_label_top'          => 'top',

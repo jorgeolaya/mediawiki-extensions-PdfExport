@@ -27,9 +27,9 @@ class HtmlDocPdfConverter extends PdfConverter {
 		}
 		
 		// Setup permissions
+		$perms = array();
 		$options['permissions'] = '';
 		if( $options['pass_protect'] == 'yes' ) {
-			$perms = array();
 			if( $options['perm_print'] == 'no' ) {
 				$perms[] = 'no-print';
 			}
@@ -42,15 +42,17 @@ class HtmlDocPdfConverter extends PdfConverter {
 			if( $options['perm_annotate'] == 'no' ) {
 				$perms[] = 'no-annotate';
 			}
-			if( count( $perms ) > 0 ) {
-				$options['permissions'] .= '--permissions ' . implode( ',', $perms ) . '--encryption';
+			if( count( $perms ) == 0 ) {
+				$options['permissions'] .= '--permissions all --encryption';
+			} else {
+				$options['permissions'] .= '--permissions ' . implode( ',', $perms ) . ' --encryption';
 			}
 			
 			if( $options['owner_pass'] != '' ) {
-				$options['permissions'] .= ' --owner_password ' . $options['owner_pass'];
+				$options['permissions'] .= ' --owner-password ' . $options['owner_pass'];
 			}
 			if( $options['user_pass'] != '' ) {
-				$options['permissions'] .= ' --user_password ' . $options['user_pass'];
+				$options['permissions'] .= ' --user-password ' . $options['user_pass'];
 			}
 		}
 	}
