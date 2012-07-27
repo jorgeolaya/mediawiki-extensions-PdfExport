@@ -1,15 +1,17 @@
 <?php
-if (!defined('MEDIAWIKI'))
-	die();
-
 /**
  * A special page to generate a PDF version of a page. The class will use PrincePDF, DomPdf, or HTMLDoc in that order.
  *
- * @author Thomas Hempel
- * @author Andreas Hagmann
- * @author Dumpydooby
- * @author Christian Neubauer
+ * @file PdfExport_body.php
+ * @ingroup PdfExport
+ * @author Thomas Hempel (Thempel)
+ * @author Christian Neubauer (Cneubauer)
+ * @author Andreas Hagmann (Ah)
+ * @author Craig Oakes (W1BBoR)
+ * @copyright (C) 2006 Thomas Hempel
+ * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
+
 class SpecialPdf extends SpecialPage {
 	var $title;
 	var $article;

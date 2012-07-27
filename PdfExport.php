@@ -1,13 +1,39 @@
 <?php
-if (!defined('MEDIAWIKI'))
-	die();
+/**
+ * PdfExport extension - Converts the current page to PDF and sends it to the browser
+ * @version 3.0.1 - 2012/08/02
+ *
+ * @link https://www.mediawiki.org/wiki/Extension:PdfExport Documentation
+ *
+ * @file PdfExport.php
+ * @defgroup PdfExport
+ * @ingroup Extensions
+ * @package MediaWiki
+ * @author Thomas Hempel (Thempel)
+ * @author Christian Neubauer (Cneubauer)
+ * @author Andreas Hagmann (Ah)
+ * @author Craig Oakes (W1BBoR)
+ * @copyright (C) 2006 Thomas Hempel
+ * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ */
 
+if ( !defined( 'MEDIAWIKI' ) ) {
+	die( 'This file is part of a MediaWiki extension and is not a valid entry point.' );
+}
+
+# Register extension on Special:Version
 $wgExtensionCredits['specialpage'][] = array(
-	'name'        => 'PdfExport',
-	'author'      => array( 'Thomas Hempel', 'Andreas Hagmann', 'Dumpydooby', 'Christian Neubauer', 'others' ),
-	'version'     => '3.0',
-	'description' => 'renders a page as pdf',
-	'url'         => 'http://www.mediawiki.org/wiki/Extension:Pdf_Export'
+	'name'           => 'PdfExport',
+	'author'         => array(
+				'Thomas Hempel',
+				'Andreas Hagmann',
+				'Christian Neubauer',
+				'Craig Oakes',
+				'...'
+			 	),
+	'version'        => '3.0.1',
+	'descriptionmsg' => 'pdfexport-desc',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:Pdf_Export'
 );
 
 $dir = dirname(__FILE__).'/';
