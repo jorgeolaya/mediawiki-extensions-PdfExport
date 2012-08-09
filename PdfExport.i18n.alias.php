@@ -7,18 +7,14 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-$aliases = array();
+$specialPageAliases = array();
 
- /** English
- * @author Thempel
- */
-$aliases['en'] = array(
-	'PdfPrint' => array('Pdfprint', 'Pdf Export'),
+/** English (English) */
+$specialPageAliases['en'] = array(
+	'PdfPrint' => array( 'Pdfprint', 'Pdf Export' ),
 );
 
- /** German (Deutsch)
- * @author Kghbln
- */
-$aliases['de'] = array(
-	'PdfPrint' => array('PDF-Druck', 'PDF-Export'),
+/** German (Deutsch) */
+$specialPageAliases['de'] = array(
+	'PdfPrint' => array( 'PDF-Druck', 'PDF-Export' ),
 );
