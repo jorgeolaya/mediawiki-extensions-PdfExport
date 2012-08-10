@@ -157,6 +157,124 @@ $messages['de-formal'] = array(
 	'pdf_prince_error' => 'Die Software zum Erzeugen der PDF-Datei funktioniert nicht. Bitte kontaktieren Sie einen Systemadministrator, sofern das Problem andauert.',
 );
 
+/** French (français)
+ * @author Brunoperel
+ */
+$messages['fr'] = array(
+	'pdfexport-desc' => 'Restitue une page en format PDF',
+	'pdfprint' => 'Export PDF',
+	'pdfprint_error' => 'Export PDF - Erreur',
+	'pdf_fontsize_label' => 'Taille de police',
+	'pdf_margins_label' => 'Marges (affichage en millimètres)',
+	'pdf_margins_label_top' => 'haut',
+	'pdf_margins_label_sides' => 'côtés',
+	'pdf_margins_label_bottom' => 'bas',
+	'pdf_print_link' => 'Imprimer au format PDF',
+	'pdf_print_text' => 'Entrez le titre de la page que vous souhaitez exporter au format PDF',
+	'pdf_submit' => 'Créer un PDF',
+	'pdf_portrait' => 'Portrait',
+	'pdf_landscape' => 'Paysage',
+	'pdf_pass_protect_label' => 'Protection par mot de passe',
+	'pdf_pass_protect_yes' => 'oui',
+	'pdf_pass_protect_no' => 'non',
+	'pdf_owner_pass_label' => 'Propriétaire du mot de passe',
+	'pdf_user_pass_label' => 'Mot de passe utilisateur',
+	'pdf_perm_print_label' => "Autoriser l'impression ?",
+	'pdf_perm_print_yes' => 'oui',
+	'pdf_perm_print_no' => 'non',
+	'pdf_perm_modify_label' => 'Autoriser la modification ?',
+	'pdf_perm_modify_yes' => 'oui',
+	'pdf_perm_modify_no' => 'non',
+	'pdf_perm_copy_label' => 'Autoriser la copie de texte ?',
+	'pdf_perm_copy_yes' => 'oui',
+	'pdf_perm_copy_no' => 'non',
+	'pdf_perm_annotate_label' => 'Autoriser les annotations ?',
+	'pdf_perm_annotate_yes' => 'oui',
+	'pdf_perm_annotate_no' => 'non',
+	'pdf_size' => 'Format du papier',
+	'pdf_filename' => 'Nom du fichier',
+	'pdf_export_no_converter_found' => "Aucun logiciel de conversion PDF n'a pu être trouvé. Veuillez installer PrinceXML, DomPdf ou HTMLDoc.",
+	'pdf_prince_error_not_installed' => "Le logiciel de création de PDF PrinceXML n'est pas installé correctement. Veuillez contacter un administrateur.",
+	'pdf_prince_error' => "Le logiciel de création de PDF n'a pas pu créer le fichier PDF. Si le problème persiste, veuillez contacter un administrateur.",
+);
+
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'pdfexport-desc' => 'Renderiza unha páxina en formato PDF',
+	'pdfprint' => 'Exportación en PDF',
+	'pdfprint_error' => 'Exportación en PDF - Erro',
+	'pdf_fontface_label' => 'Fonte de letra',
+	'pdf_fontsize_label' => 'Tamaño da letra',
+	'pdf_margins_label' => 'Marxes (móstrase en milímetros)',
+	'pdf_margins_label_top' => 'arriba',
+	'pdf_margins_label_sides' => 'lados',
+	'pdf_margins_label_bottom' => 'pé',
+	'pdf_print_link' => 'Imprimir como PDF',
+	'pdf_print_text' => 'Insira o título da páxina que queira exportar en formato PDF',
+	'pdf_submit' => 'Crear o PDF',
+	'pdf_portrait' => 'Retrato',
+	'pdf_landscape' => 'Paisaxe',
+	'pdf_pass_protect_label' => 'Protección por contrasinal',
+	'pdf_pass_protect_yes' => 'si',
+	'pdf_pass_protect_no' => 'non',
+	'pdf_owner_pass_label' => 'Contrasinal de propietario',
+	'pdf_user_pass_label' => 'Contrasinal de usuario',
+	'pdf_perm_print_label' => 'Quere permitir a impresión?',
+	'pdf_perm_print_yes' => 'si',
+	'pdf_perm_print_no' => 'non',
+	'pdf_perm_modify_label' => 'Quere permitir a modificación?',
+	'pdf_perm_modify_yes' => 'si',
+	'pdf_perm_modify_no' => 'non',
+	'pdf_perm_copy_label' => 'Quere permitir a copia de texto?',
+	'pdf_perm_copy_yes' => 'si',
+	'pdf_perm_copy_no' => 'non',
+	'pdf_perm_annotate_label' => 'Quere permitir as anotacións?',
+	'pdf_perm_annotate_yes' => 'si',
+	'pdf_perm_annotate_no' => 'non',
+	'pdf_size' => 'Tamaño do papel',
+	'pdf_filename' => 'Nome do ficheiro',
+	'pdf_export_no_converter_found' => 'Non se atopou ningún software de conversión a PDF. Instale PrinceXML, DomPdf ou HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'O software de creación de ficheiros PDF PrinceXML non está instalado correctamente. Póñase en contacto cun administrador.',
+	'pdf_prince_error' => 'O software de creación de ficheiros PDF non foi capaz de crear o PDF. Se o problema continúa, póñase en contacto cun administrador.',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'pdfexport-desc' => 'Zmóžnja wudawanje strony jako PDF',
+	'pdfprint' => 'PDF-eksport',
+	'pdfprint_error' => 'PDF-eksport - zmylk',
+	'pdf_margins_label' => 'Kromy (w milimetrach)',
+	'pdf_margins_label_top' => 'horjeka',
+	'pdf_margins_label_sides' => 'boki',
+	'pdf_margins_label_bottom' => 'deleka',
+	'pdf_print_link' => 'Jako PDF ćišćeć',
+	'pdf_print_text' => 'Zapodaj titul strony, kotruž chceš jako PDF wudać',
+	'pdf_submit' => 'Jako PDF wudać',
+	'pdf_pass_protect_label' => 'Hesłowy škit',
+	'pdf_pass_protect_yes' => 'haj',
+	'pdf_pass_protect_no' => 'ně',
+	'pdf_owner_pass_label' => 'Hesło wobsedźerja',
+	'pdf_user_pass_label' => 'Wužiwarske hesło',
+	'pdf_perm_print_label' => 'Ćišćenje dowolić?',
+	'pdf_perm_print_yes' => 'haj',
+	'pdf_perm_print_no' => 'ně',
+	'pdf_perm_modify_label' => 'Změny dowolić?',
+	'pdf_perm_modify_yes' => 'haj',
+	'pdf_perm_modify_no' => 'ně',
+	'pdf_perm_copy_label' => 'Kopěrowanje teksta dowolić?',
+	'pdf_perm_copy_yes' => 'haj',
+	'pdf_perm_copy_no' => 'ně',
+	'pdf_perm_annotate_label' => 'Komentary dowolić?',
+	'pdf_perm_annotate_yes' => 'haj',
+	'pdf_perm_annotate_no' => 'ně',
+	'pdf_size' => 'Papjerowy format',
+	'pdf_filename' => 'Datajowe mjeno',
+);
+
 /** Italian (italiano)
  * @author Darth Kule
  */
@@ -190,12 +308,143 @@ $messages['it'] = array(
 	'pdf_perm_copy_yes' => 'sì',
 	'pdf_perm_copy_no' => 'no',
 	'pdf_perm_annotate_label' => 'Consentire le annotazioni?',
+	'pdf_perm_annotate_yes' => 'sì',
+	'pdf_perm_annotate_no' => 'no',
+	'pdf_size' => 'Formato della carta',
+	'pdf_filename' => 'Nome del file',
+	'pdf_export_no_converter_found' => 'Nessun software di conversione PDF trovato. Si prega di installare PrinceXML, DomPdf o HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'Il software di creazione di PDF PrinceXML non è installato correttamente. Si prega di contattare un amministratore.',
+	'pdf_prince_error' => 'Il software di creazione di PDF non era in grado di creare il PDF. Se il problema persiste, contattare un amministratore.',
+);
+
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'pdfexport-desc' => 'ページをPDF形式にレンダリングする',
+	'pdfprint' => 'PDF書き出し',
+	'pdfprint_error' => 'PDF書き出し - エラー',
+	'pdf_fontface_label' => 'フォント名',
+	'pdf_fontsize_label' => 'フォントサイズ',
+	'pdf_margins_label' => '余白 (mm)',
+	'pdf_margins_label_top' => '上',
+	'pdf_margins_label_sides' => '左右',
+	'pdf_margins_label_bottom' => '下',
+	'pdf_print_link' => 'PDFとして印刷',
+	'pdf_print_text' => 'PDF形式で書き出したいページ名を入力',
+	'pdf_submit' => 'PDFを作成',
+	'pdf_portrait' => '縦',
+	'pdf_landscape' => '横',
+	'pdf_pass_protect_label' => 'パスワード保護',
+	'pdf_pass_protect_yes' => 'はい',
+	'pdf_pass_protect_no' => 'いいえ',
+	'pdf_owner_pass_label' => '所有者パスワード',
+	'pdf_user_pass_label' => '利用者パスワード',
+	'pdf_perm_print_label' => '印刷を許可しますか?',
+	'pdf_perm_print_yes' => 'はい',
+	'pdf_perm_print_no' => 'いいえ',
+	'pdf_perm_modify_label' => '変更を許可しますか?',
+	'pdf_perm_modify_yes' => 'はい',
+	'pdf_perm_modify_no' => 'いいえ',
+	'pdf_perm_copy_label' => 'テキストのコピーを許可しますか?',
+	'pdf_perm_copy_yes' => 'はい',
+	'pdf_perm_copy_no' => 'いいえ',
+	'pdf_perm_annotate_label' => '注釈を許可しますか?',
+	'pdf_perm_annotate_yes' => 'はい',
+	'pdf_perm_annotate_no' => 'いいえ',
+	'pdf_size' => '用紙サイズ',
+	'pdf_filename' => 'ファイル名',
+	'pdf_export_no_converter_found' => 'PDF変換ソフトウェアが見つかりません。PrinceXML、DomPdf、HTMLDocのいずれかをインストールしてください。',
+	'pdf_prince_error_not_installed' => 'PDF作成ソフトウェアPrinceXMLが正しくインストールされていません。管理者にお問い合わせください。',
+	'pdf_prince_error' => 'PDF作成ソフトウェアがPDFを作成できませんでした。この問題が続く場合は、管理者にお問い合わせください。',
+);
+
+/** Macedonian (македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'pdfexport-desc' => 'Испис на страница во PDF',
+	'pdfprint' => 'PDF-извоз',
+	'pdfprint_error' => 'PDF-извоз — Грешка',
+	'pdf_fontface_label' => 'Фонт',
+	'pdf_fontsize_label' => 'Големина на фонтот',
+	'pdf_margins_label' => 'Маргини (се прикажува во милиметри)',
+	'pdf_margins_label_top' => 'горе',
+	'pdf_margins_label_sides' => 'странично',
+	'pdf_margins_label_bottom' => 'долу',
+	'pdf_print_link' => 'Печати како PDF',
+	'pdf_print_text' => 'Внесете го насловот на страницата што сакате да ја извезете како PDF',
+	'pdf_submit' => 'Направи PDF',
+	'pdf_portrait' => 'Исправено',
+	'pdf_landscape' => 'Водорамно',
+	'pdf_pass_protect_label' => 'Заштита со лозинка',
+	'pdf_pass_protect_yes' => 'да',
+	'pdf_pass_protect_no' => 'не',
+	'pdf_owner_pass_label' => 'Лозинка на сопственикот',
+	'pdf_user_pass_label' => 'Лозинка на корисникот',
+	'pdf_perm_print_label' => 'Да може да се печати?',
+	'pdf_perm_print_yes' => 'да',
+	'pdf_perm_print_no' => 'не',
+	'pdf_perm_modify_label' => 'Да може да се менува?',
+	'pdf_perm_modify_yes' => 'да',
+	'pdf_perm_modify_no' => 'не',
+	'pdf_perm_copy_label' => 'Да може текстот да се копира?',
+	'pdf_perm_copy_yes' => 'да',
+	'pdf_perm_copy_no' => 'не',
+	'pdf_perm_annotate_label' => 'Да може да се ставаат прибелешки?',
+	'pdf_perm_annotate_yes' => 'да',
+	'pdf_perm_annotate_no' => 'не',
+	'pdf_size' => 'Големина на листот',
+	'pdf_filename' => 'Име на податотеката',
+	'pdf_export_no_converter_found' => 'Не пронајдов програм за претворање во PDF. Инсталирајте еден од следниве: PrinceXML, DomPdf или HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'Програмот PrinceXML за создавање на PDF не е инсталиран како што треба. Обратете се кај администраторот.',
+	'pdf_prince_error' => 'Програмот за испис на PDF не можеш да ја создаде податотеката. Обратете се кај администраторот.',
+);
+
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Jnanaranjan Sahu
+ */
+$messages['or'] = array(
+	'pdfexport-desc' => 'ପୃଷ୍ଠାଟିକୁ ପିଡ଼ିଏଫ ଭାବେ ବାହାର କରନ୍ତୁ',
+	'pdfprint' => 'ପିଡ଼ିଏଫ ରପ୍ତାନି',
+);
+
+/** Romanian (română)
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'pdfprint' => 'Export PDF',
+	'pdfprint_error' => 'Export PDF - Eroare',
+	'pdf_margins_label' => 'Margini (exprimate în milimetrii)',
+	'pdf_print_link' => 'Tipărește ca PDF',
+	'pdf_submit' => 'Fă PDF',
+	'pdf_portrait' => 'Portret',
+	'pdf_landscape' => 'Peisaj',
+	'pdf_pass_protect_label' => 'Protecție pentru parolă',
+	'pdf_pass_protect_yes' => 'da',
+	'pdf_pass_protect_no' => 'nu',
+	'pdf_user_pass_label' => 'Parola utilizatorului',
+	'pdf_perm_print_label' => 'Permiți tipărirea?',
+	'pdf_perm_print_yes' => 'da',
+	'pdf_perm_print_no' => 'nu',
+	'pdf_perm_modify_label' => 'Permiți modificarea?',
+	'pdf_perm_modify_yes' => 'da',
+	'pdf_perm_modify_no' => 'nu',
+	'pdf_perm_copy_label' => 'Permiți copierea textului?',
+	'pdf_perm_copy_yes' => 'da',
+	'pdf_perm_copy_no' => 'nu',
+	'pdf_perm_annotate_label' => 'Perimiți adnotarea?',
+	'pdf_perm_annotate_yes' => 'da',
+	'pdf_perm_annotate_no' => 'nu',
+	'pdf_size' => 'Dimensiunea foii',
+	'pdf_filename' => 'Numele fișierului',
 );
 
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
 $messages['tl'] = array(
+	'pdfexport-desc' => 'Naghaharap ng isang pahina bilang PDF',
 	'pdfprint' => 'Pagluluwas ng PDF',
 	'pdfprint_error' => 'Pagluluwas ng PDF - Kamalian',
 	'pdf_fontface_label' => 'Mukha ng estilo ng titik',
@@ -204,5 +453,65 @@ $messages['tl'] = array(
 	'pdf_margins_label_top' => 'tuktok',
 	'pdf_margins_label_sides' => 'mga gilid',
 	'pdf_margins_label_bottom' => 'ilalim',
+	'pdf_print_link' => 'Ilimbag bilang PDF',
+	'pdf_print_text' => 'Ipasok ang pamagat ng pahinang nais mong iluwas na papunta sa PDF',
+	'pdf_submit' => 'Gawing PDF',
+	'pdf_portrait' => 'Larawan',
+	'pdf_landscape' => 'Tanawin',
+	'pdf_pass_protect_label' => 'Prutektahan ng hudyat',
+	'pdf_pass_protect_yes' => 'oo',
+	'pdf_pass_protect_no' => 'huwag',
+	'pdf_owner_pass_label' => 'Hudyat ng may-ari',
+	'pdf_user_pass_label' => 'Hudyat ng tagagamit',
+	'pdf_perm_print_label' => 'Payagan ang paglilimbag?',
+	'pdf_perm_print_yes' => 'oo',
+	'pdf_perm_print_no' => 'huwag',
+	'pdf_perm_modify_label' => 'Pahintulutan ang pagbabago?',
+	'pdf_perm_modify_yes' => 'oo',
+	'pdf_perm_modify_no' => 'huwag',
+	'pdf_perm_copy_label' => 'Payagan ang pagkopya ng teksto?',
+	'pdf_perm_copy_yes' => 'oo',
+	'pdf_perm_copy_no' => 'huwag',
+	'pdf_perm_annotate_label' => 'Payagan ang anotasyon?',
+	'pdf_perm_annotate_yes' => 'oo',
+	'pdf_perm_annotate_no' => 'huwag',
+	'pdf_size' => 'Sukat ng papel',
+	'pdf_filename' => 'Pangalan ng talaksan',
+	'pdf_export_no_converter_found' => 'Walang matagpuang sopwer ng Pagpapalit na PDF. Paki iluklok ang PrinceXML, DomPdf, o kaya ang HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'Hindi tama ang pagkakaluklok ng sopwer na panlikha ng PDF. Paki makipag-ugnayan sa tagapangasiwa.',
+	'pdf_prince_error' => 'Hindi nagawang makalikha ng PDF ng sopwer na panlikha ng PDF. Kapag nagtagal ang suliranin, paki makipag-ugnayan sa tagapangasiwa.',
+);
+
+/** Simplified Chinese (‪中文（简体）‬)
+ * @author Shirayuki
+ */
+$messages['zh-hans'] = array(
+	'pdf_pass_protect_yes' => '是',
+	'pdf_pass_protect_no' => '否',
+	'pdf_perm_print_yes' => '是',
+	'pdf_perm_print_no' => '否',
+	'pdf_perm_modify_yes' => '是',
+	'pdf_perm_modify_no' => '否',
+	'pdf_perm_copy_yes' => '是',
+	'pdf_perm_copy_no' => '否',
+	'pdf_perm_annotate_yes' => '是',
+	'pdf_perm_annotate_no' => '否',
+	'pdf_filename' => '文件名',
+);
+
+/** Traditional Chinese (‪中文（繁體）‬)
+ * @author Shirayuki
+ */
+$messages['zh-hant'] = array(
+	'pdf_pass_protect_yes' => '是',
+	'pdf_pass_protect_no' => '否',
+	'pdf_perm_print_yes' => '是',
+	'pdf_perm_print_no' => '否',
+	'pdf_perm_modify_yes' => '是',
+	'pdf_perm_modify_no' => '否',
+	'pdf_perm_copy_yes' => '是',
+	'pdf_perm_copy_no' => '否',
+	'pdf_perm_annotate_yes' => '是',
+	'pdf_perm_annotate_no' => '否',
 );
 
