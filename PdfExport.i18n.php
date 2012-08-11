@@ -359,6 +359,31 @@ $messages['ja'] = array(
 	'pdf_prince_error' => 'PDF作成ソフトウェアがPDFを作成できませんでした。この問題が続く場合は、管理者にお問い合わせください。',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'pdfprint' => 'PDF-ის ექსპორტი',
+	'pdfprint_error' => 'PDF-ის ექსპორტი - შეცდომა',
+	'pdf_fontsize_label' => 'შრიფტის ზომა',
+	'pdf_print_link' => 'შენახვა PDF ფორმატში',
+	'pdf_submit' => 'PDF-ის შექმნა',
+	'pdf_portrait' => 'პორტრეტი',
+	'pdf_landscape' => 'ლანდშაფტი',
+	'pdf_pass_protect_yes' => 'დიახ',
+	'pdf_pass_protect_no' => 'არა',
+	'pdf_perm_print_yes' => 'დიახ',
+	'pdf_perm_print_no' => 'არა',
+	'pdf_perm_modify_yes' => 'დიახ',
+	'pdf_perm_modify_no' => 'არა',
+	'pdf_perm_copy_yes' => 'დიახ',
+	'pdf_perm_copy_no' => 'არა',
+	'pdf_perm_annotate_yes' => 'დიახ',
+	'pdf_perm_annotate_no' => 'არა',
+	'pdf_size' => 'ქაღალდის ზომა',
+	'pdf_filename' => 'ფაილის სახელი',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
