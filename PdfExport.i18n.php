@@ -384,6 +384,48 @@ $messages['ka'] = array(
 	'pdf_filename' => 'ფაილის სახელი',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'pdfexport-desc' => 'PDF로 문서 렌더',
+	'pdfprint' => 'PDF 내보내기',
+	'pdfprint_error' => 'PDF 내보내기 - 오류',
+	'pdf_fontface_label' => '글꼴',
+	'pdf_fontsize_label' => '글자 크기',
+	'pdf_margins_label' => '여백 (밀리미터로 표기)',
+	'pdf_margins_label_top' => '위쪽',
+	'pdf_margins_label_sides' => '양쪽',
+	'pdf_margins_label_bottom' => '아래쪽',
+	'pdf_print_link' => 'PDF로 인쇄',
+	'pdf_print_text' => 'PDF로 내보낼 문서 제목을 입력하세요',
+	'pdf_submit' => 'PDF 만들기',
+	'pdf_portrait' => '인물 사진',
+	'pdf_landscape' => '풍경',
+	'pdf_pass_protect_label' => '비밀번호 보호',
+	'pdf_pass_protect_yes' => '예',
+	'pdf_pass_protect_no' => '아니오',
+	'pdf_owner_pass_label' => '소유자 비밀번호',
+	'pdf_user_pass_label' => '사용자 비밀번호',
+	'pdf_perm_print_label' => '인쇄를 허용하겠습니까?',
+	'pdf_perm_print_yes' => '예',
+	'pdf_perm_print_no' => '아니오',
+	'pdf_perm_modify_label' => '수정을 허용하겠습니까?',
+	'pdf_perm_modify_yes' => '예',
+	'pdf_perm_modify_no' => '아니오',
+	'pdf_perm_copy_label' => '텍스트 복사를 허용하겠습니까?',
+	'pdf_perm_copy_yes' => '예',
+	'pdf_perm_copy_no' => '아니오',
+	'pdf_perm_annotate_label' => '주석을 허용하겠습니까?',
+	'pdf_perm_annotate_yes' => '예',
+	'pdf_perm_annotate_no' => '아니오',
+	'pdf_size' => '용지 크기',
+	'pdf_filename' => '파일 이름',
+	'pdf_export_no_converter_found' => 'PDF 변환 소프트웨어를 찾을 수 없습니다. PrinceXML, DomPdf, 또는 HTMLDoc 중 하나를 설치하세요.',
+	'pdf_prince_error_not_installed' => 'PrinceXML PDF 만들기 소프트웨어를 올바르게 설치하지 않았습니다. 관리자에게 문의하세요.',
+	'pdf_prince_error' => 'PDF 만들기 소프트웨어가 PDF를 만들 수 없습니다. 문제가 계속되면 관리자에게 문의하세요.',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -434,6 +476,31 @@ $messages['or'] = array(
 	'pdfprint' => 'ପିଡ଼ିଏଫ ରପ୍ତାନି',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'pdf_margins_label_top' => 'سر',
+	'pdf_margins_label_sides' => 'اړخونه',
+	'pdf_pass_protect_yes' => 'هو',
+	'pdf_pass_protect_no' => 'نه',
+	'pdf_owner_pass_label' => 'د خاوند پټنوم',
+	'pdf_user_pass_label' => 'د کارن پټنوم',
+	'pdf_perm_print_label' => 'تر جوړېدو وروسته چاپ ته يې پرېږدې؟',
+	'pdf_perm_print_yes' => 'هو',
+	'pdf_perm_print_no' => 'نه',
+	'pdf_perm_modify_label' => 'تر جوړېدو وروسته بدلون ته يې پرېږدې؟',
+	'pdf_perm_modify_yes' => 'هو',
+	'pdf_perm_modify_no' => 'نه',
+	'pdf_perm_copy_label' => 'تر جوړېدو وروسته، د متن لمېسلو ته پرېږدې؟',
+	'pdf_perm_copy_yes' => 'هو',
+	'pdf_perm_copy_no' => 'نه',
+	'pdf_perm_annotate_yes' => 'هو',
+	'pdf_perm_annotate_no' => 'نه',
+	'pdf_size' => 'د کاغذ کچه',
+	'pdf_filename' => 'د دوتنې نوم',
+);
+
 /** Romanian (română)
  * @author Stelistcristi
  */
@@ -463,6 +530,38 @@ $messages['ro'] = array(
 	'pdf_perm_annotate_no' => 'nu',
 	'pdf_size' => 'Dimensiunea foii',
 	'pdf_filename' => 'Numele fișierului',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'pdf_pass_protect_yes' => 'ඔව්',
+	'pdf_pass_protect_no' => 'නැත',
+	'pdf_perm_print_yes' => 'ඔව්',
+	'pdf_perm_print_no' => 'නැත',
+	'pdf_perm_modify_yes' => 'ඔව්',
+	'pdf_perm_modify_no' => 'නැත',
+	'pdf_perm_copy_yes' => 'ඔව්',
+	'pdf_perm_annotate_no' => 'නැත',
+	'pdf_filename' => 'ගොනුනාමය',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'pdf_pass_protect_yes' => 'అవును',
+	'pdf_pass_protect_no' => 'వద్దు',
+	'pdf_perm_print_yes' => 'అవును',
+	'pdf_perm_print_no' => 'వద్దు',
+	'pdf_perm_modify_yes' => 'అవును',
+	'pdf_perm_modify_no' => 'వద్దు',
+	'pdf_perm_copy_yes' => 'అవును',
+	'pdf_perm_copy_no' => 'వద్దు',
+	'pdf_perm_annotate_yes' => 'అవును',
+	'pdf_perm_annotate_no' => 'వద్దు',
+	'pdf_size' => 'కాగితపు పరిమాణం',
 );
 
 /** Tagalog (Tagalog)
