@@ -69,7 +69,7 @@ A4',
  */
 $messages['qqq'] = array(
 	'pdfexport-desc' => '{{desc}}',
-	'pdfprint' => 'The page title',
+	'pdfprint' => 'The title of the special page and the text of the link to it on [[Special:SpecialPages]]',
 	'pdfprint_error' => 'The page title if there is an error',
 	'pdf_fontface_label' => 'The special page form label for the fontface',
 	'pdf_fontsize_label' => 'The special page form label for the fontsize',
@@ -111,7 +111,7 @@ $messages['qqq'] = array(
  */
 $messages['de'] = array(
 	'pdfexport-desc' => 'Ermöglicht die Ausgabe einer Seite als PDF-Datei',
-	'pdfprint' => 'RDF-Export',
+	'pdfprint' => 'Seite als PDF exportieren',
 	'pdfprint_error' => 'PDF-Export – Fehler',
 	'pdf_fontface_label' => 'Schriftart',
 	'pdf_fontsize_label' => 'Schriftgröße',
@@ -366,7 +366,10 @@ $messages['ka'] = array(
 	'pdfprint' => 'PDF-ის ექსპორტი',
 	'pdfprint_error' => 'PDF-ის ექსპორტი - შეცდომა',
 	'pdf_fontsize_label' => 'შრიფტის ზომა',
+	'pdf_margins_label_top' => 'ზედა',
+	'pdf_margins_label_bottom' => 'ქვედა',
 	'pdf_print_link' => 'შენახვა PDF ფორმატში',
+	'pdf_print_text' => 'შეიყვანეთ გვერდის სათაური რომლის PDF-ში ექსპორტიც გსურთ',
 	'pdf_submit' => 'PDF-ის შექმნა',
 	'pdf_portrait' => 'პორტრეტი',
 	'pdf_landscape' => 'ლანდშაფტი',
@@ -424,6 +427,40 @@ $messages['ko'] = array(
 	'pdf_export_no_converter_found' => 'PDF 변환 소프트웨어를 찾을 수 없습니다. PrinceXML, DomPdf, 또는 HTMLDoc 중 하나를 설치하세요.',
 	'pdf_prince_error_not_installed' => 'PrinceXML PDF 만들기 소프트웨어를 올바르게 설치하지 않았습니다. 관리자에게 문의하세요.',
 	'pdf_prince_error' => 'PDF 만들기 소프트웨어가 PDF를 만들 수 없습니다. 문제가 계속되면 관리자에게 문의하세요.',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'pdfexport-desc' => 'Transforméiert eng Säit a PDF',
+	'pdfprint' => 'PDF-Export',
+	'pdf_margins_label' => 'Ränner (a Millimeter)',
+	'pdf_margins_label_top' => 'uewen',
+	'pdf_margins_label_sides' => 'Säiten',
+	'pdf_margins_label_bottom' => 'ënnen',
+	'pdf_print_link' => 'Als PDF drécken',
+	'pdf_print_text' => 'Gitt den Titel vun der Säit an déi Dir als PDF wëllt',
+	'pdf_submit' => 'PDF maachen',
+	'pdf_portrait' => 'Portrait',
+	'pdf_landscape' => 'Landscape',
+	'pdf_pass_protect_label' => 'Passwuertschutz',
+	'pdf_pass_protect_yes' => 'jo',
+	'pdf_pass_protect_no' => 'neen',
+	'pdf_user_pass_label' => 'Benotzer-Passwuert',
+	'pdf_perm_print_label' => 'Drécken erlaben?',
+	'pdf_perm_print_yes' => 'jo',
+	'pdf_perm_print_no' => 'neen',
+	'pdf_perm_modify_label' => 'Änneren erlaben?',
+	'pdf_perm_modify_yes' => 'jo',
+	'pdf_perm_modify_no' => 'neen',
+	'pdf_perm_copy_label' => 'Kopéiere vum Text erlaben?',
+	'pdf_perm_copy_yes' => 'jo',
+	'pdf_perm_copy_no' => 'neen',
+	'pdf_perm_annotate_yes' => 'jo',
+	'pdf_perm_annotate_no' => 'neen',
+	'pdf_size' => 'Pabeiergréisst',
+	'pdf_filename' => 'Numm vum Fichier',
 );
 
 /** Macedonian (македонски)
@@ -545,6 +582,44 @@ $messages['si'] = array(
 	'pdf_perm_copy_yes' => 'ඔව්',
 	'pdf_perm_annotate_no' => 'නැත',
 	'pdf_filename' => 'ගොනුනාමය',
+);
+
+/** Tamil (தமிழ்)
+ * @author Karthi.dr
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'pdfprint' => 'PDF ஏற்றுமதி',
+	'pdfprint_error' => 'PDF ஏற்றுமதி - பிழை',
+	'pdf_fontsize_label' => 'எழுத்துரு அளவு',
+	'pdf_margins_label' => 'ஓரங்கள் (மில்லிமீட்டரில் காண்பிக்கப்படுகிறது)',
+	'pdf_margins_label_top' => 'மேல்',
+	'pdf_margins_label_sides' => 'பக்கங்கள்',
+	'pdf_margins_label_bottom' => 'கீழ்',
+	'pdf_print_link' => 'PDF ஆக அச்சிடு',
+	'pdf_print_text' => 'PDFக்கு நீங்கள் ஏற்றுமதி செய்ய விரும்பும் பக்கத்தின் தலைப்பை உள்ளிடவும்.',
+	'pdf_submit' => 'PDF உருவாக்கு',
+	'pdf_portrait' => 'நெடுக்கு வாட்டு',
+	'pdf_landscape' => 'அகலவாட்டு',
+	'pdf_pass_protect_label' => 'கடவுச்சொல் பாதுகாப்பு',
+	'pdf_pass_protect_yes' => 'ஆம்',
+	'pdf_pass_protect_no' => 'இல்லை',
+	'pdf_owner_pass_label' => 'உரிமையாளர் கடவுச்சொல்',
+	'pdf_user_pass_label' => 'பயனர் கடவுச்சொல்',
+	'pdf_perm_print_label' => 'அச்சிடுதலை அனுமதிப்பதா ?',
+	'pdf_perm_print_yes' => 'ஆம்',
+	'pdf_perm_print_no' => 'இல்லை',
+	'pdf_perm_modify_label' => 'மாற்றத்தை அனுமதிக்கவா ?',
+	'pdf_perm_modify_yes' => 'ஆம்',
+	'pdf_perm_modify_no' => 'இல்லை',
+	'pdf_perm_copy_label' => 'உரையை நகலெடுப்பதை அனுமதிப்பதா ?',
+	'pdf_perm_copy_yes' => 'ஆம்',
+	'pdf_perm_copy_no' => 'இல்லை',
+	'pdf_perm_annotate_label' => 'விளக்க உரைகளை அனுமதிப்பதா ?',
+	'pdf_perm_annotate_yes' => 'ஆம்',
+	'pdf_perm_annotate_no' => 'இல்லை',
+	'pdf_size' => 'தாள் அளவு',
+	'pdf_filename' => 'கோப்பின் பெயர்',
 );
 
 /** Telugu (తెలుగు)
