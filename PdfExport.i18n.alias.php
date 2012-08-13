@@ -23,3 +23,8 @@ $specialPageAliases['de'] = array(
 $specialPageAliases['mk'] = array(
 	'PdfPrint' => array( 'Pdfпечатење', 'Pdf_извоз' ),
 );
+
+/** Dutch (Nederlands) */
+$specialPageAliases['nl'] = array(
+	'PdfPrint' => array( 'PDFAfdrukken' ),
+);

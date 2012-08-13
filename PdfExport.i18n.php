@@ -106,6 +106,36 @@ $messages['qqq'] = array(
 	'pdf_prince_error' => 'An error message describing a general error encountered when running the Prince PDF backend',
 );
 
+/** Czech (česky)
+ * @author Vks
+ */
+$messages['cs'] = array(
+	'pdf_print_link' => 'Vytisknout jako PDF',
+	'pdf_print_text' => 'Zadejte titulek stránky, kterou chcete vyexportovat do PDF',
+	'pdf_submit' => 'Vytvořit PDF',
+	'pdf_portrait' => 'Na výšku',
+	'pdf_landscape' => 'Na šířku',
+	'pdf_pass_protect_label' => 'Ochrana heslem',
+	'pdf_pass_protect_yes' => 'ano',
+	'pdf_pass_protect_no' => 'ne',
+	'pdf_owner_pass_label' => 'Heslo vlastníka',
+	'pdf_user_pass_label' => 'Uživatelské heslo',
+	'pdf_perm_print_label' => 'Povolit tisk?',
+	'pdf_perm_print_yes' => 'ano',
+	'pdf_perm_print_no' => 'ne',
+	'pdf_perm_modify_label' => 'Povolit změny?',
+	'pdf_perm_modify_yes' => 'ano',
+	'pdf_perm_modify_no' => 'ne',
+	'pdf_perm_copy_label' => 'Povolit kopírování textu?',
+	'pdf_perm_copy_yes' => 'ano',
+	'pdf_perm_copy_no' => 'ne',
+	'pdf_perm_annotate_label' => 'Povolit vkládání poznámek?',
+	'pdf_perm_annotate_yes' => 'ano',
+	'pdf_perm_annotate_no' => 'ne',
+	'pdf_size' => 'Velikost papíru',
+	'pdf_filename' => 'Název souboru',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
@@ -155,6 +185,30 @@ $messages['de-formal'] = array(
 	'pdf_print_text' => 'Geben Sie den Namen der Seite an, die als PDF-Datei exportiert werden soll.',
 	'pdf_prince_error_not_installed' => 'Die Software PrinceXML, zum Erzeugen der PDF-Datei, wurde nicht richtig installiert. Bitte kontaktierem Sie einen Systemadministrator.',
 	'pdf_prince_error' => 'Die Software zum Erzeugen der PDF-Datei funktioniert nicht. Bitte kontaktieren Sie einen Systemadministrator, sofern das Problem andauert.',
+);
+
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'pdf_margins_label_top' => 'ülaosa',
+	'pdf_margins_label_sides' => 'küljed',
+	'pdf_margins_label_bottom' => 'alaosa',
+	'pdf_pass_protect_label' => 'Parooli kaitsmine',
+	'pdf_pass_protect_yes' => 'jah',
+	'pdf_pass_protect_no' => 'ei',
+	'pdf_owner_pass_label' => 'Omaniku parool',
+	'pdf_user_pass_label' => 'Kasutaja parool',
+	'pdf_perm_print_yes' => 'jah',
+	'pdf_perm_print_no' => 'ei',
+	'pdf_perm_modify_yes' => 'jah',
+	'pdf_perm_modify_no' => 'ei',
+	'pdf_perm_copy_yes' => 'jah',
+	'pdf_perm_copy_no' => 'ei',
+	'pdf_perm_annotate_yes' => 'jah',
+	'pdf_perm_annotate_no' => 'ei',
+	'pdf_size' => 'Paberi suurus',
+	'pdf_filename' => 'Failinimi',
 );
 
 /** French (français)
@@ -240,6 +294,14 @@ $messages['gl'] = array(
 	'pdf_prince_error' => 'O software de creación de ficheiros PDF non foi capaz de crear o PDF. Se o problema continúa, póñase en contacto cun administrador.',
 );
 
+/** Hindi (हिन्दी)
+ * @author Karthi.dr
+ */
+$messages['hi'] = array(
+	'pdf_pass_protect_yes' => 'हाँ',
+	'pdf_pass_protect_no' => 'नहीं',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
@@ -273,6 +335,22 @@ $messages['hsb'] = array(
 	'pdf_perm_annotate_no' => 'ně',
 	'pdf_size' => 'Papjerowy format',
 	'pdf_filename' => 'Datajowe mjeno',
+);
+
+/** Hungarian (magyar)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['hu'] = array(
+	'pdf_pass_protect_yes' => 'igen',
+	'pdf_pass_protect_no' => 'nem',
+	'pdf_perm_print_yes' => 'igen',
+	'pdf_perm_print_no' => 'nem',
+	'pdf_perm_modify_yes' => 'igen',
+	'pdf_perm_modify_no' => 'nem',
+	'pdf_perm_copy_yes' => 'igen',
+	'pdf_perm_copy_no' => 'nem',
+	'pdf_perm_annotate_yes' => 'igen',
+	'pdf_perm_annotate_no' => 'nem',
 );
 
 /** Italian (italiano)
@@ -505,6 +583,48 @@ $messages['mk'] = array(
 	'pdf_prince_error' => 'Програмот за испис на PDF не можеш да ја создаде податотеката. Обратете се кај администраторот.',
 );
 
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'pdfexport-desc' => 'Geeft uitvoer van een pagina in PDF-opmaak',
+	'pdfprint' => 'Naar PDF exporteren',
+	'pdfprint_error' => 'PDF-export - Fout',
+	'pdf_fontface_label' => 'Lettertype',
+	'pdf_fontsize_label' => 'Lettergrootte',
+	'pdf_margins_label' => 'Marges (weergave in millimeters)',
+	'pdf_margins_label_top' => 'boven',
+	'pdf_margins_label_sides' => 'zijkanten',
+	'pdf_margins_label_bottom' => 'onder',
+	'pdf_print_link' => 'Afdrukken als PDF',
+	'pdf_print_text' => 'Geef de naam op van de pagina die u als PDF wilt exporteren',
+	'pdf_submit' => 'PDF maken',
+	'pdf_portrait' => 'Portret',
+	'pdf_landscape' => 'Landschap',
+	'pdf_pass_protect_label' => 'Wachtwoordbeveiliging',
+	'pdf_pass_protect_yes' => 'ja',
+	'pdf_pass_protect_no' => 'nee',
+	'pdf_owner_pass_label' => 'Wachtwoord eigenaar',
+	'pdf_user_pass_label' => 'Wachtwoord gebruiker',
+	'pdf_perm_print_label' => 'Afdrukken toestaan?',
+	'pdf_perm_print_yes' => 'ja',
+	'pdf_perm_print_no' => 'nee',
+	'pdf_perm_modify_label' => 'Wijzigingen toestaan?',
+	'pdf_perm_modify_yes' => 'ja',
+	'pdf_perm_modify_no' => 'nee',
+	'pdf_perm_copy_label' => 'Kopiëren van tekst toestaan?',
+	'pdf_perm_copy_yes' => 'ja',
+	'pdf_perm_copy_no' => 'nee',
+	'pdf_perm_annotate_label' => 'Opmerkingen toevoegen toestaan?',
+	'pdf_perm_annotate_yes' => 'ja',
+	'pdf_perm_annotate_no' => 'nee',
+	'pdf_size' => 'Papierformaat',
+	'pdf_filename' => 'Bestandsnaam',
+	'pdf_export_no_converter_found' => 'Er is geen software aangetroffen voor omzetten naar PDF. Installeer PrinceXML, DomPdf of HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'PrinceXML, de software voor het maken van PDF-bestanden, is niet correct geïnstalleerd. Neem contact op met een systeembeheerder.',
+	'pdf_prince_error' => 'De software voor het maken van PDF-bestanden was niet in staat een PDF-bestand te maken. Neem contact op met een systeembeheerder als het probleem aanhoudt.',
+);
+
 /** Oriya (ଓଡ଼ିଆ)
  * @author Jnanaranjan Sahu
  */
@@ -573,6 +693,7 @@ $messages['ro'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'pdf_margins_label_top' => 'ඉහළ',
 	'pdf_pass_protect_yes' => 'ඔව්',
 	'pdf_pass_protect_no' => 'නැත',
 	'pdf_perm_print_yes' => 'ඔව්',
@@ -580,7 +701,10 @@ $messages['si'] = array(
 	'pdf_perm_modify_yes' => 'ඔව්',
 	'pdf_perm_modify_no' => 'නැත',
 	'pdf_perm_copy_yes' => 'ඔව්',
+	'pdf_perm_copy_no' => 'නැත',
+	'pdf_perm_annotate_yes' => 'ඔව්',
 	'pdf_perm_annotate_no' => 'නැත',
+	'pdf_size' => 'පිටු ප්‍රමාණය',
 	'pdf_filename' => 'ගොනුනාමය',
 );
 
@@ -626,8 +750,11 @@ $messages['ta'] = array(
  * @author Veeven
  */
 $messages['te'] = array(
+	'pdf_margins_label_sides' => 'ప్రక్కలు',
 	'pdf_pass_protect_yes' => 'అవును',
 	'pdf_pass_protect_no' => 'వద్దు',
+	'pdf_owner_pass_label' => 'యజమాని సంకేతపదం',
+	'pdf_user_pass_label' => 'వాడుకరి సంకేతపదం',
 	'pdf_perm_print_yes' => 'అవును',
 	'pdf_perm_print_no' => 'వద్దు',
 	'pdf_perm_modify_yes' => 'అవును',
