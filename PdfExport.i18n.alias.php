@@ -14,6 +14,11 @@ $specialPageAliases['en'] = array(
 	'PdfPrint' => array( 'Pdfprint', 'Pdf Export' ),
 );
 
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'PdfPrint' => array( 'طبع_بي_دي_إف', 'تصدير_بي_دي_إف' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'PdfPrint' => array( 'PDF-Druck', 'PDF-Export' ),

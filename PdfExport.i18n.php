@@ -583,6 +583,64 @@ $messages['mk'] = array(
 	'pdf_prince_error' => 'Програмот за испис на PDF не можеш да ја создаде податотеката. Обратете се кај администраторот.',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'pdfexport-desc' => 'Memaparkan halaman dalam bentuk PDF',
+	'pdfprint' => 'Eksport PDF',
+	'pdfprint_error' => 'Eksport PDF - Ralat',
+	'pdf_fontface_label' => 'Rupa huruf',
+	'pdf_fontsize_label' => 'Saiz huruf',
+	'pdf_margins_label' => 'Jidar (mm)',
+	'pdf_margins_label_top' => 'atas',
+	'pdf_margins_label_sides' => 'tepi',
+	'pdf_margins_label_bottom' => 'bawah',
+	'pdf_print_link' => 'Cetak dalam bentuk PDF',
+	'pdf_print_text' => 'Isikan tajuk halaman yang ingin anda eksport dalam bentuk PDF',
+	'pdf_submit' => 'Buat PDF',
+	'pdf_portrait' => 'Potret',
+	'pdf_landscape' => 'Landskap',
+	'pdf_pass_protect_label' => 'Perlindungan kata laluan',
+	'pdf_pass_protect_yes' => 'ya',
+	'pdf_pass_protect_no' => 'tidak',
+	'pdf_owner_pass_label' => 'Kata laluan pemilik',
+	'pdf_user_pass_label' => 'Kata laluan pengguna',
+	'pdf_perm_print_label' => 'Benarkan pencetakan?',
+	'pdf_perm_print_yes' => 'ya',
+	'pdf_perm_print_no' => 'tidak',
+	'pdf_perm_modify_label' => 'Benarkan pengubahsuaian?',
+	'pdf_perm_modify_yes' => 'ya',
+	'pdf_perm_modify_no' => 'tidak',
+	'pdf_perm_copy_label' => 'Benarkan penyalinan teks?',
+	'pdf_perm_copy_yes' => 'ya',
+	'pdf_perm_copy_no' => 'tidak',
+	'pdf_perm_annotate_label' => 'Benarkan anotasi?',
+	'pdf_perm_annotate_yes' => 'ya',
+	'pdf_perm_annotate_no' => 'tidak',
+	'pdf_size' => 'Saiz kertas',
+	'pdf_filename' => 'Nama fail',
+	'pdf_export_no_converter_found' => 'Perisian Penukar PDF tidak dijumpai. Sila pasang PrinceXML, DomPdf atau HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'Perisian membuat PDF PrinceXML tidak dipasang dengan betul. Sila hubungi pentadbir.',
+	'pdf_prince_error' => 'Perisian membuat PDF tidak dapat membuat PDF. Jika masalah ini berlanjutan, sila hubungi pentadbir.',
+);
+
+/** Maltese (Malti)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['mt'] = array(
+	'pdf_pass_protect_yes' => 'iva',
+	'pdf_pass_protect_no' => 'le',
+	'pdf_perm_print_yes' => 'iva',
+	'pdf_perm_print_no' => 'le',
+	'pdf_perm_modify_yes' => 'iva',
+	'pdf_perm_modify_no' => 'le',
+	'pdf_perm_copy_yes' => 'iva',
+	'pdf_perm_copy_no' => 'le',
+	'pdf_perm_annotate_yes' => 'iva',
+	'pdf_perm_annotate_no' => 'le',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -637,8 +695,13 @@ $messages['or'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'pdf_fontface_label' => 'د ليکبڼې مخ',
+	'pdf_fontsize_label' => 'د ليکبڼې کچه',
 	'pdf_margins_label_top' => 'سر',
 	'pdf_margins_label_sides' => 'اړخونه',
+	'pdf_print_link' => 'د پي ډي اېف په توګه چاپول',
+	'pdf_submit' => 'پي ډي اېف جوړول',
+	'pdf_pass_protect_label' => 'پټنوم ژغورنه',
 	'pdf_pass_protect_yes' => 'هو',
 	'pdf_pass_protect_no' => 'نه',
 	'pdf_owner_pass_label' => 'د خاوند پټنوم',
