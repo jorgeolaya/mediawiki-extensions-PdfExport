@@ -211,6 +211,20 @@ $messages['et'] = array(
 	'pdf_filename' => 'Failinimi',
 );
 
+/** Basque (euskara)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['eu'] = array(
+	'pdf_pass_protect_yes' => 'bai',
+	'pdf_pass_protect_no' => 'ez',
+	'pdf_perm_print_yes' => 'bai',
+	'pdf_perm_modify_no' => 'ez',
+	'pdf_perm_copy_yes' => 'bai',
+	'pdf_perm_copy_no' => 'ez',
+	'pdf_perm_annotate_yes' => 'bai',
+	'pdf_perm_annotate_no' => 'ez',
+);
+
 /** French (français)
  * @author Brunoperel
  */
@@ -513,6 +527,7 @@ $messages['ko'] = array(
 $messages['lb'] = array(
 	'pdfexport-desc' => 'Transforméiert eng Säit a PDF',
 	'pdfprint' => 'PDF-Export',
+	'pdfprint_error' => 'PDF-Export – Feeler',
 	'pdf_margins_label' => 'Ränner (a Millimeter)',
 	'pdf_margins_label_top' => 'uewen',
 	'pdf_margins_label_sides' => 'Säiten',
