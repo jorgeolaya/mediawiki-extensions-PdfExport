@@ -218,6 +218,8 @@ $messages['eu'] = array(
 	'pdf_pass_protect_yes' => 'bai',
 	'pdf_pass_protect_no' => 'ez',
 	'pdf_perm_print_yes' => 'bai',
+	'pdf_perm_print_no' => 'ez',
+	'pdf_perm_modify_yes' => 'bai',
 	'pdf_perm_modify_no' => 'ez',
 	'pdf_perm_copy_yes' => 'bai',
 	'pdf_perm_copy_no' => 'ez',
@@ -264,6 +266,29 @@ $messages['fr'] = array(
 	'pdf_export_no_converter_found' => "Aucun logiciel de conversion PDF n'a pu être trouvé. Veuillez installer PrinceXML, DomPdf ou HTMLDoc.",
 	'pdf_prince_error_not_installed' => "Le logiciel de création de PDF PrinceXML n'est pas installé correctement. Veuillez contacter un administrateur.",
 	'pdf_prince_error' => "Le logiciel de création de PDF n'a pas pu créer le fichier PDF. Si le problème persiste, veuillez contacter un administrateur.",
+);
+
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'pdf_print_link' => 'Emprimar u format PDF',
+	'pdf_submit' => 'Fâre un PDF',
+	'pdf_portrait' => 'Portrèt',
+	'pdf_landscape' => 'Payisâjo',
+	'pdf_pass_protect_label' => 'Protèccion per contresegno',
+	'pdf_pass_protect_yes' => 'ouè',
+	'pdf_pass_protect_no' => 'nan',
+	'pdf_perm_print_yes' => 'ouè',
+	'pdf_perm_print_no' => 'nan',
+	'pdf_perm_modify_yes' => 'ouè',
+	'pdf_perm_modify_no' => 'nan',
+	'pdf_perm_copy_yes' => 'ouè',
+	'pdf_perm_copy_no' => 'nan',
+	'pdf_perm_annotate_yes' => 'ouè',
+	'pdf_perm_annotate_no' => 'nan',
+	'pdf_size' => 'Format du papiér',
+	'pdf_filename' => 'Nom du fichiér',
 );
 
 /** Galician (galego)
@@ -323,6 +348,8 @@ $messages['hsb'] = array(
 	'pdfexport-desc' => 'Zmóžnja wudawanje strony jako PDF',
 	'pdfprint' => 'PDF-eksport',
 	'pdfprint_error' => 'PDF-eksport - zmylk',
+	'pdf_fontface_label' => 'Družina pisma',
+	'pdf_fontsize_label' => 'Wulkosć pisma',
 	'pdf_margins_label' => 'Kromy (w milimetrach)',
 	'pdf_margins_label_top' => 'horjeka',
 	'pdf_margins_label_sides' => 'boki',
@@ -884,6 +911,38 @@ $messages['tl'] = array(
 	'pdf_export_no_converter_found' => 'Walang matagpuang sopwer ng Pagpapalit na PDF. Paki iluklok ang PrinceXML, DomPdf, o kaya ang HTMLDoc.',
 	'pdf_prince_error_not_installed' => 'Hindi tama ang pagkakaluklok ng sopwer na panlikha ng PDF. Paki makipag-ugnayan sa tagapangasiwa.',
 	'pdf_prince_error' => 'Hindi nagawang makalikha ng PDF ng sopwer na panlikha ng PDF. Kapag nagtagal ang suliranin, paki makipag-ugnayan sa tagapangasiwa.',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['vi'] = array(
+	'pdf_pass_protect_yes' => 'Có',
+	'pdf_pass_protect_no' => 'Không',
+	'pdf_perm_print_yes' => 'Có',
+	'pdf_perm_print_no' => 'Không',
+	'pdf_perm_modify_yes' => 'Có',
+	'pdf_perm_modify_no' => 'Không',
+	'pdf_perm_copy_yes' => 'Có',
+	'pdf_perm_copy_no' => 'Không',
+	'pdf_perm_annotate_yes' => 'Có',
+	'pdf_perm_annotate_no' => 'Không',
+);
+
+/** Yiddish (ייִדיש)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['yi'] = array(
+	'pdf_pass_protect_yes' => 'יא',
+	'pdf_pass_protect_no' => 'ניין',
+	'pdf_perm_print_yes' => 'יא',
+	'pdf_perm_print_no' => 'ניין',
+	'pdf_perm_modify_yes' => 'יא',
+	'pdf_perm_modify_no' => 'ניין',
+	'pdf_perm_copy_yes' => 'יא',
+	'pdf_perm_copy_no' => 'ניין',
+	'pdf_perm_annotate_yes' => 'יא',
+	'pdf_perm_annotate_no' => 'ניין',
 );
 
 /** Simplified Chinese (‪中文（简体）‬)
