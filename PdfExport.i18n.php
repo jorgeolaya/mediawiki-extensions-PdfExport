@@ -227,6 +227,33 @@ $messages['eu'] = array(
 	'pdf_perm_annotate_no' => 'ez',
 );
 
+/** Finnish (suomi)
+ * @author Beluga
+ */
+$messages['fi'] = array(
+	'pdfprint' => 'Vie PDF',
+	'pdfprint_error' => 'Virhe PDF-viennissä',
+	'pdf_print_link' => 'Tulosta PDF-tiedostoksi',
+	'pdf_submit' => 'Tee PDF',
+	'pdf_portrait' => 'Pysty',
+	'pdf_landscape' => 'Vaaka',
+	'pdf_pass_protect_label' => 'Salasanasuojaus',
+	'pdf_pass_protect_yes' => 'kyllä',
+	'pdf_pass_protect_no' => 'ei',
+	'pdf_perm_print_yes' => 'kyllä',
+	'pdf_perm_print_no' => 'ei',
+	'pdf_perm_modify_label' => 'Sallitaanko muutokset?',
+	'pdf_perm_modify_yes' => 'kyllä',
+	'pdf_perm_modify_no' => 'ei',
+	'pdf_perm_copy_label' => 'Sallitaanko tekstin kopiointi?',
+	'pdf_perm_copy_yes' => 'kyllä',
+	'pdf_perm_copy_no' => 'ei',
+	'pdf_perm_annotate_yes' => 'kyllä',
+	'pdf_perm_annotate_no' => 'ei',
+	'pdf_size' => 'Paperikoko',
+	'pdf_filename' => 'Tiedostonimi',
+);
+
 /** French (français)
  * @author Brunoperel
  */
@@ -911,6 +938,30 @@ $messages['tl'] = array(
 	'pdf_export_no_converter_found' => 'Walang matagpuang sopwer ng Pagpapalit na PDF. Paki iluklok ang PrinceXML, DomPdf, o kaya ang HTMLDoc.',
 	'pdf_prince_error_not_installed' => 'Hindi tama ang pagkakaluklok ng sopwer na panlikha ng PDF. Paki makipag-ugnayan sa tagapangasiwa.',
 	'pdf_prince_error' => 'Hindi nagawang makalikha ng PDF ng sopwer na panlikha ng PDF. Kapag nagtagal ang suliranin, paki makipag-ugnayan sa tagapangasiwa.',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'pdf_margins_label_top' => 'سب سے اوپر',
+	'pdf_portrait' => 'پورٹریٹ',
+	'pdf_landscape' => 'زمین کی تزئین کی',
+	'pdf_pass_protect_label' => 'پاس ورڈ کی حفاظت',
+	'pdf_pass_protect_yes' => 'جی ہاں',
+	'pdf_pass_protect_no' => 'نہیں',
+	'pdf_owner_pass_label' => 'مالک کے پاس ورڈ',
+	'pdf_user_pass_label' => 'صارف کے پاس ورڈ',
+	'pdf_perm_print_yes' => 'جی ہاں',
+	'pdf_perm_print_no' => 'نہیں',
+	'pdf_perm_modify_label' => 'سی ترمیم کی اجازت دیتے ہیں ؟',
+	'pdf_perm_modify_yes' => 'جی ہاں',
+	'pdf_perm_modify_no' => 'نہیں',
+	'pdf_perm_copy_label' => 'اجازت متن نقل کر رہا ہے ؟',
+	'pdf_perm_copy_yes' => 'جی ہاں',
+	'pdf_perm_copy_no' => 'نہیں',
+	'pdf_perm_annotate_yes' => 'جی ہاں',
+	'pdf_perm_annotate_no' => 'نہیں',
 );
 
 /** Vietnamese (Tiếng Việt)
