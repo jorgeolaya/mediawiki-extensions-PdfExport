@@ -106,6 +106,44 @@ $messages['qqq'] = array(
 	'pdf_prince_error' => 'An error message describing a general error encountered when running the Prince PDF backend',
 );
 
+/** Breton (brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'pdfexport-desc' => 'Pourvez a ra ur bajenn er furmad PDF',
+	'pdfprint' => 'Ezporzh PDF',
+	'pdfprint_error' => 'Ezporzh PDF - Fazi',
+	'pdf_fontsize_label' => 'Ment ar font',
+	'pdf_margins_label_sides' => 'kostezioù',
+	'pdf_margins_label_bottom' => 'traoñ',
+	'pdf_print_link' => 'Moullañ er furmad PDF',
+	'pdf_print_text' => "Lakait titl ar bajenn a fell deoc'h ezporzhiañ er furmad PDF",
+	'pdf_submit' => 'Krouiñ ur PDF',
+	'pdf_portrait' => 'Poltred',
+	'pdf_landscape' => 'Gweledva',
+	'pdf_pass_protect_label' => 'Gwareziñ dre ur ger-tremen',
+	'pdf_pass_protect_yes' => 'ya',
+	'pdf_pass_protect_no' => 'ket',
+	'pdf_owner_pass_label' => "Perc'henn ar ger-tremen",
+	'pdf_perm_print_label' => 'Aotreañ moullañ ?',
+	'pdf_perm_print_yes' => 'ya',
+	'pdf_perm_print_no' => 'ket',
+	'pdf_perm_modify_label' => "Aotreañ ar c'hemm ?",
+	'pdf_perm_modify_yes' => 'ya',
+	'pdf_perm_modify_no' => 'ket',
+	'pdf_perm_copy_label' => 'Aotreañ eilañ an destenn ?',
+	'pdf_perm_copy_yes' => 'ya',
+	'pdf_perm_copy_no' => 'ket',
+	'pdf_perm_annotate_label' => 'Aotreañ an notennaouiñ ?',
+	'pdf_perm_annotate_yes' => 'ya',
+	'pdf_perm_annotate_no' => 'ket',
+	'pdf_size' => 'Ment ar paper',
+	'pdf_filename' => 'Anv ar restr',
+	'pdf_export_no_converter_found' => "N'eus bet kavet meziant amdreiñ e PDF ebet. Mar plij stalit PrinceXML, DomPdf pe HTMLDoc.",
+	'pdf_prince_error_not_installed' => "N'eo ket staliet er mod reizh ar meziant PrinceXM evit krouiñ PDFoù. Mar plij kit e darempred gant ur merour.",
+	'pdf_prince_error' => "N'en deus ket gellet ar meziant krouiñ PDFoù krouiñ ar restr PDF. Ma talc'h ar gudenn, mar plij kit e darempred gant ur merour.",
+);
+
 /** Czech (česky)
  * @author Vks
  */
@@ -229,10 +267,11 @@ $messages['eu'] = array(
 
 /** Finnish (suomi)
  * @author Beluga
+ * @author Nike
  */
 $messages['fi'] = array(
-	'pdfprint' => 'Vie PDF',
-	'pdfprint_error' => 'Virhe PDF-viennissä',
+	'pdfprint' => 'Vie PDF-tiedostoksi',
+	'pdfprint_error' => 'PDF-vienti epäonnistui',
 	'pdf_print_link' => 'Tulosta PDF-tiedostoksi',
 	'pdf_submit' => 'Tee PDF',
 	'pdf_portrait' => 'Pysty',
@@ -384,6 +423,8 @@ $messages['hsb'] = array(
 	'pdf_print_link' => 'Jako PDF ćišćeć',
 	'pdf_print_text' => 'Zapodaj titul strony, kotruž chceš jako PDF wudać',
 	'pdf_submit' => 'Jako PDF wudać',
+	'pdf_portrait' => 'Wysoki format',
+	'pdf_landscape' => 'Prěčny format',
 	'pdf_pass_protect_label' => 'Hesłowy škit',
 	'pdf_pass_protect_yes' => 'haj',
 	'pdf_pass_protect_no' => 'ně',
@@ -403,6 +444,9 @@ $messages['hsb'] = array(
 	'pdf_perm_annotate_no' => 'ně',
 	'pdf_size' => 'Papjerowy format',
 	'pdf_filename' => 'Datajowe mjeno',
+	'pdf_export_no_converter_found' => 'Softwara za PDF-konwertowanje njeje so namakała. Prošu instaluj pak PrinceXML, DomPdf abo HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'Softwara PrinceXML za wutworjenje PDF-datajow njeje so prawje instalowała. Prošu staj so z administratorom do zwiska.',
+	'pdf_prince_error' => 'Softwara za wutworjenje PDF-datajow njemóže PDF-dataje wutworić. Jeli tutón problem dale eksistuje, staj so z administratorom do zwiska.',
 );
 
 /** Hungarian (magyar)
@@ -819,6 +863,48 @@ $messages['ro'] = array(
 	'pdf_perm_annotate_no' => 'nu',
 	'pdf_size' => 'Dimensiunea foii',
 	'pdf_filename' => 'Numele fișierului',
+);
+
+/** Russian (русский)
+ * @author Kalan
+ */
+$messages['ru'] = array(
+	'pdfexport-desc' => 'Преобразует страницу в формат PDF',
+	'pdfprint' => 'Экспорт в PDF',
+	'pdfprint_error' => 'Экспорт в PDF — ошибка',
+	'pdf_fontface_label' => 'Шрифт',
+	'pdf_fontsize_label' => 'Размер',
+	'pdf_margins_label' => 'Поля (в миллиметрах)',
+	'pdf_margins_label_top' => 'верхнее',
+	'pdf_margins_label_sides' => 'боковые',
+	'pdf_margins_label_bottom' => 'нижнее',
+	'pdf_print_link' => 'Печатать как PDF',
+	'pdf_print_text' => 'Введите название страницы, которую вы хотите экспортировать в PDF',
+	'pdf_submit' => 'Создать PDF',
+	'pdf_portrait' => 'Портретная',
+	'pdf_landscape' => 'Ландшафтная',
+	'pdf_pass_protect_label' => 'Защита паролем',
+	'pdf_pass_protect_yes' => 'да',
+	'pdf_pass_protect_no' => 'нет',
+	'pdf_owner_pass_label' => 'Пароль владельца',
+	'pdf_user_pass_label' => 'Пароль пользователя',
+	'pdf_perm_print_label' => 'Разрешить печать?',
+	'pdf_perm_print_yes' => 'да',
+	'pdf_perm_print_no' => 'нет',
+	'pdf_perm_modify_label' => 'Разрешить правки?',
+	'pdf_perm_modify_yes' => 'да',
+	'pdf_perm_modify_no' => 'нет',
+	'pdf_perm_copy_label' => 'Разрешить копирование текста?',
+	'pdf_perm_copy_yes' => 'да',
+	'pdf_perm_copy_no' => 'нет',
+	'pdf_perm_annotate_label' => 'Разрешить аннотации?',
+	'pdf_perm_annotate_yes' => 'да',
+	'pdf_perm_annotate_no' => 'нет',
+	'pdf_size' => 'Размер бумаги',
+	'pdf_filename' => 'Имя файла',
+	'pdf_export_no_converter_found' => 'Не удалось обнаружить средства преобразования в PDF. Пожалуйста, установите PrinceXML, DomPdf или HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'Программа для создания PDF, PrinceXML, не установлена корректно. Пожалуйста, обратитесь к администратору.',
+	'pdf_prince_error' => 'Программе для создания PDF не удалось создать файл. Если проблема повторяется, пожалуйста, обратитесь к администратору.',
 );
 
 /** Sinhala (සිංහල)
