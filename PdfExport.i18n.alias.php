@@ -24,6 +24,11 @@ $specialPageAliases['de'] = array(
 	'PdfPrint' => array( 'PDF-Druck', 'PDF-Export' ),
 );
 
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'PdfPrint' => array( 'Pdf인쇄', 'Pdf내보내기' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'PdfPrint' => array( 'Pdfпечатење', 'Pdf_извоз' ),
