@@ -919,30 +919,31 @@ $messages['ps'] = array(
 );
 
 /** Romanian (română)
+ * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'pdfprint' => 'Export PDF',
 	'pdfprint_error' => 'Export PDF - Eroare',
-	'pdf_margins_label' => 'Margini (exprimate în milimetrii)',
+	'pdf_margins_label' => 'Margini (exprimate în milimetri)',
 	'pdf_print_link' => 'Tipărește ca PDF',
-	'pdf_submit' => 'Fă PDF',
+	'pdf_submit' => 'Creează un PDF',
 	'pdf_portrait' => 'Portret',
 	'pdf_landscape' => 'Peisaj',
 	'pdf_pass_protect_label' => 'Protecție pentru parolă',
 	'pdf_pass_protect_yes' => 'da',
 	'pdf_pass_protect_no' => 'nu',
 	'pdf_user_pass_label' => 'Parola utilizatorului',
-	'pdf_perm_print_label' => 'Permiți tipărirea?',
+	'pdf_perm_print_label' => 'Permiteți tipărirea?',
 	'pdf_perm_print_yes' => 'da',
 	'pdf_perm_print_no' => 'nu',
-	'pdf_perm_modify_label' => 'Permiți modificarea?',
+	'pdf_perm_modify_label' => 'Permiteți modificarea?',
 	'pdf_perm_modify_yes' => 'da',
 	'pdf_perm_modify_no' => 'nu',
-	'pdf_perm_copy_label' => 'Permiți copierea textului?',
+	'pdf_perm_copy_label' => 'Permiteți copierea textului?',
 	'pdf_perm_copy_yes' => 'da',
 	'pdf_perm_copy_no' => 'nu',
-	'pdf_perm_annotate_label' => 'Perimiți adnotarea?',
+	'pdf_perm_annotate_label' => 'Permiteți adnotarea?',
 	'pdf_perm_annotate_yes' => 'da',
 	'pdf_perm_annotate_no' => 'nu',
 	'pdf_size' => 'Dimensiunea foii',
