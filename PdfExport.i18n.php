@@ -225,6 +225,45 @@ $messages['de-formal'] = array(
 	'pdf_prince_error' => 'Die Software zum Erzeugen der PDF-Datei funktioniert nicht. Bitte kontaktieren Sie einen Systemadministrator, sofern das Problem andauert.',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'pdfexport-desc' => 'Zmóžnja wudawanje boka ako PDF',
+	'pdfprint' => 'PDF-eksport',
+	'pdfprint_error' => 'PDF-eksport - zmólka',
+	'pdf_fontface_label' => 'Pismowa družyna',
+	'pdf_fontsize_label' => 'Wjelikosć pisma',
+	'pdf_margins_label' => 'Kšomy (w milimetrach)',
+	'pdf_margins_label_top' => 'górjejce',
+	'pdf_margins_label_sides' => 'boki',
+	'pdf_margins_label_bottom' => 'dołojce',
+	'pdf_print_link' => 'Ako PDF śišćaś',
+	'pdf_print_text' => 'Zapódajśo titel boka, kótaryž coš ako PDF wudaś',
+	'pdf_submit' => 'Ako PDF wudaś',
+	'pdf_portrait' => 'Wusoki format',
+	'pdf_landscape' => 'Prěcny format',
+	'pdf_pass_protect_label' => 'Gronidłowy šćit',
+	'pdf_pass_protect_yes' => 'jo',
+	'pdf_pass_protect_no' => 'ně',
+	'pdf_owner_pass_label' => 'Gronidło wobsejźarja',
+	'pdf_user_pass_label' => 'Wužywarske gronidło',
+	'pdf_perm_print_label' => 'Śišćanje dowóliś?',
+	'pdf_perm_print_yes' => 'jo',
+	'pdf_perm_print_no' => 'ně',
+	'pdf_perm_modify_label' => 'Změny dowóliś?',
+	'pdf_perm_modify_yes' => 'jo',
+	'pdf_perm_modify_no' => 'ně',
+	'pdf_perm_copy_label' => 'Kopěrowanje teksta dowóliś?',
+	'pdf_perm_copy_yes' => 'jo',
+	'pdf_perm_copy_no' => 'ně',
+	'pdf_perm_annotate_label' => 'Komentary dowóliś?',
+	'pdf_perm_annotate_yes' => 'jo',
+	'pdf_perm_annotate_no' => 'ně',
+	'pdf_size' => 'Papierowy format',
+	'pdf_filename' => 'Datajowe mě',
+);
+
 /** Spanish (español)
  * @author Armando-Martin
  */
