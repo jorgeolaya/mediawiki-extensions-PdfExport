@@ -262,6 +262,9 @@ $messages['dsb'] = array(
 	'pdf_perm_annotate_no' => 'ně',
 	'pdf_size' => 'Papierowy format',
 	'pdf_filename' => 'Datajowe mě',
+	'pdf_export_no_converter_found' => 'Softwara za PDF-konwertěrowanje njejo se namakała. Pšosym instalěruj pak PrinceXML, DomPdf pak HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'Softwara PrinceXML za napóranje PDF-datajow njejo se pšawje instalěrowała. Pšosym staj se z administratorom do zwiska.',
+	'pdf_prince_error' => 'Softwara za napóranje PDF-datajow njamóžo PDF-dataje napóraś. Jolic toś ten problem dalej eksistěrujo, staj se z administratorom do zwiska.',
 );
 
 /** Spanish (español)
@@ -525,7 +528,7 @@ $messages['hsb'] = array(
 	'pdf_perm_annotate_no' => 'ně',
 	'pdf_size' => 'Papjerowy format',
 	'pdf_filename' => 'Datajowe mjeno',
-	'pdf_export_no_converter_found' => 'Softwara za PDF-konwertowanje njeje so namakała. Prošu instaluj pak PrinceXML, DomPdf abo HTMLDoc.',
+	'pdf_export_no_converter_found' => 'Softwara za PDF-konwertowanje njeje so namakała. Prošu instaluj pak PrinceXML, DomPdf pak HTMLDoc.',
 	'pdf_prince_error_not_installed' => 'Softwara PrinceXML za wutworjenje PDF-datajow njeje so prawje instalowała. Prošu staj so z administratorom do zwiska.',
 	'pdf_prince_error' => 'Softwara za wutworjenje PDF-datajow njemóže PDF-dataje wutworić. Jeli tutón problem dale eksistuje, staj so z administratorom do zwiska.',
 );
