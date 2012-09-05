@@ -34,6 +34,11 @@ $specialPageAliases['mk'] = array(
 	'PdfPrint' => array( 'Pdfпечатење', 'Pdf_извоз' ),
 );
 
+/** Malayalam (മലയാളം) */
+$specialPageAliases['ml'] = array(
+	'PdfPrint' => array( 'പിഡിഎഫ്അച്ചടി', 'പിഡിഎഫ്_കയറ്റുമതി' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'PdfPrint' => array( 'PDFAfdrukken' ),
