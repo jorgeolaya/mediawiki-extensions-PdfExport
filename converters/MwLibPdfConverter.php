@@ -42,7 +42,7 @@ class MwLibPdfConverter extends PdfConverter {
 		// TODO gather output
 		$tmpFile = tempnam(sys_get_temp_dir(), 'mw-pdf-');
 		$output = array();
-		exec($wgPdfExportMwLibPath.' --config '.$wgServer.$wgScriptPath.'/ --output '.$tmpFile.' --writer rl '.$page, $output);
+		exec($wgPdfExportMwLibPath.' --config '.$wgServer.$wgScriptPath.'/ --output '.$tmpFile.' --writer rl '.escapeshellarg($page), $output);
 		
 		readfile( $tmpFile );
 		unlink( $tmpFile );
