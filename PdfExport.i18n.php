@@ -960,6 +960,33 @@ $messages['ps'] = array(
 	'pdf_filename' => 'د دوتنې نوم',
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author Luckas Blade
+ */
+$messages['pt-br'] = array(
+	'pdf_pass_protect_yes' => 'Sim',
+	'pdf_pass_protect_no' => 'não',
+	'pdf_owner_pass_label' => 'Senha de proprietário',
+	'pdf_user_pass_label' => 'Senha de usuário',
+	'pdf_perm_print_label' => 'Permitir a impressão?',
+	'pdf_perm_print_yes' => 'sim',
+	'pdf_perm_print_no' => 'não',
+	'pdf_perm_modify_label' => 'Permitir a modificação?',
+	'pdf_perm_modify_yes' => 'sim',
+	'pdf_perm_modify_no' => 'não',
+	'pdf_perm_copy_label' => 'Permitir cópia de texto?',
+	'pdf_perm_copy_yes' => 'sim',
+	'pdf_perm_copy_no' => 'não',
+	'pdf_perm_annotate_label' => 'Permitir anotação?',
+	'pdf_perm_annotate_yes' => 'sim',
+	'pdf_perm_annotate_no' => 'não',
+	'pdf_size' => 'Tamanho do papel',
+	'pdf_filename' => 'Nome do arquivo',
+	'pdf_export_no_converter_found' => 'Não foi encontrado nenhum software de conversão de PDF. Por favor, instale o PrinceXML, DomPdf ou HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'O software de criação de PDF PrinceXML não está instalado corretamente. Entre em contato com o administrador.',
+	'pdf_prince_error' => 'O software de criação de PDF não foi capaz de criar o PDF. Se o problema persistir, entre em contato com o administrador.',
+);
+
 /** Romanian (română)
  * @author Minisarm
  * @author Stelistcristi
