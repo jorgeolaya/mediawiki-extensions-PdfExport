@@ -125,6 +125,7 @@ $messages['br'] = array(
 	'pdf_pass_protect_yes' => 'ya',
 	'pdf_pass_protect_no' => 'ket',
 	'pdf_owner_pass_label' => "Perc'henn ar ger-tremen",
+	'pdf_user_pass_label' => 'Ger-tremen implijer',
 	'pdf_perm_print_label' => 'Aotreañ moullañ ?',
 	'pdf_perm_print_yes' => 'ya',
 	'pdf_perm_print_no' => 'ket',
