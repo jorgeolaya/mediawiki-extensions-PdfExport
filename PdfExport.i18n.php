@@ -1257,7 +1257,7 @@ $messages['zh-hans'] = array(
 	'pdf_filename' => '文件名',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Shirayuki
  */
 $messages['zh-hant'] = array(
@@ -1271,5 +1271,6 @@ $messages['zh-hant'] = array(
 	'pdf_perm_copy_no' => '否',
 	'pdf_perm_annotate_yes' => '是',
 	'pdf_perm_annotate_no' => '否',
+	'pdf_filename' => '文件名',
 );
 
