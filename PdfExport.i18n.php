@@ -217,7 +217,7 @@ $messages['de'] = array(
 	'pdf_prince_error' => 'Die Software zum Erzeugen der PDF-Datei funktioniert nicht. Bitte kontaktiere einen Systemadministrator, sofern das Problem andauert.',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Kghbln
  */
 $messages['de-formal'] = array(
@@ -1282,7 +1282,7 @@ $messages['yi'] = array(
 	'pdf_perm_annotate_no' => 'ניין',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Shirayuki
  */
 $messages['zh-hans'] = array(
