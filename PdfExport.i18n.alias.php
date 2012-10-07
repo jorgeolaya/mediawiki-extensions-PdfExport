@@ -24,6 +24,11 @@ $specialPageAliases['de'] = array(
 	'PdfPrint' => array( 'PDF-Druck', 'PDF-Export' ),
 );
 
+/** Japanese (日本語) */
+$specialPageAliases['ja'] = array(
+	'PdfPrint' => array( 'PDFエクスポート' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'PdfPrint' => array( 'Pdf인쇄', 'Pdf내보내기' ),
