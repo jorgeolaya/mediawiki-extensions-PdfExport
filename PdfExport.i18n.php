@@ -642,13 +642,6 @@ $messages['ja'] = array(
 	'pdfprint' => 'PDF書き出し',
 	'pdfprint_error' => 'PDF書き出し - エラー',
 	'pdf_fontface_label' => 'フォント名',
-	'pdf_fontface_default' => 'times',
-	'pdf_fontface_options' => 'times
-courier
-helvetica
-monospace
-sans
-serif',
 	'pdf_fontsize_label' => 'フォントサイズ',
 	'pdf_margins_label' => '余白 (mm)',
 	'pdf_margins_label_top' => '上',
@@ -677,9 +670,6 @@ serif',
 	'pdf_perm_annotate_yes' => 'はい',
 	'pdf_perm_annotate_no' => 'いいえ',
 	'pdf_size' => '用紙サイズ',
-	'pdf_size_default' => 'レター',
-	'pdf_size_options' => 'レター
-A4',
 	'pdf_filename' => 'ファイル名',
 	'pdf_export_no_converter_found' => 'PDF変換ソフトウェアが見つかりません。PrinceXML、DomPdf、HTMLDocのいずれかをインストールしてください。',
 	'pdf_prince_error_not_installed' => 'PDF作成ソフトウェアPrinceXMLが正しくインストールされていません。管理者にお問い合わせください。',
