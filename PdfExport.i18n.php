@@ -380,11 +380,13 @@ $messages['fi'] = array(
 
 /** French (français)
  * @author Brunoperel
+ * @author Gomoko
  */
 $messages['fr'] = array(
 	'pdfexport-desc' => 'Restitue une page en format PDF',
 	'pdfprint' => 'Export PDF',
 	'pdfprint_error' => 'Export PDF - Erreur',
+	'pdf_fontface_label' => 'Polices',
 	'pdf_fontsize_label' => 'Taille de police',
 	'pdf_margins_label' => 'Marges (affichage en millimètres)',
 	'pdf_margins_label_top' => 'haut',
