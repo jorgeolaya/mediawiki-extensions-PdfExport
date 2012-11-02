@@ -767,6 +767,7 @@ $messages['lb'] = array(
 	'pdf_pass_protect_label' => 'Passwuertschutz',
 	'pdf_pass_protect_yes' => 'jo',
 	'pdf_pass_protect_no' => 'neen',
+	'pdf_owner_pass_label' => 'Passwuert vum Proprietaire',
 	'pdf_user_pass_label' => 'Benotzer-Passwuert',
 	'pdf_perm_print_label' => 'Drécken erlaben?',
 	'pdf_perm_print_yes' => 'jo',
@@ -1286,19 +1287,41 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Shirayuki
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'pdfexport-desc' => '导出页面为 PDF',
+	'pdfprint' => 'PDF 导出',
+	'pdfprint_error' => 'PDF 导出 - 错误',
+	'pdf_fontsize_label' => '字体大小',
+	'pdf_margins_label' => '页边空白（以毫米为单位）',
+	'pdf_margins_label_top' => '顶',
+	'pdf_margins_label_sides' => '侧',
+	'pdf_margins_label_bottom' => '底',
+	'pdf_print_link' => '打印为 PDF',
+	'pdf_print_text' => '请输入您要导出为PDF的页面标题',
+	'pdf_pass_protect_label' => '密码保护',
 	'pdf_pass_protect_yes' => '是',
 	'pdf_pass_protect_no' => '否',
+	'pdf_owner_pass_label' => '所有者密码',
+	'pdf_user_pass_label' => '用户密码',
+	'pdf_perm_print_label' => '允许打印？',
 	'pdf_perm_print_yes' => '是',
 	'pdf_perm_print_no' => '否',
+	'pdf_perm_modify_label' => '允许修改？',
 	'pdf_perm_modify_yes' => '是',
 	'pdf_perm_modify_no' => '否',
+	'pdf_perm_copy_label' => '允许复制文本？',
 	'pdf_perm_copy_yes' => '是',
 	'pdf_perm_copy_no' => '否',
+	'pdf_perm_annotate_label' => '允许注解？',
 	'pdf_perm_annotate_yes' => '是',
 	'pdf_perm_annotate_no' => '否',
+	'pdf_size' => '纸张大小',
 	'pdf_filename' => '文件名',
+	'pdf_export_no_converter_found' => '没有找到PDF转换软件。请安装PrinceXML或DomPdf或HTMLDoc。',
+	'pdf_prince_error_not_installed' => 'PrinceXML PDF 创建软件安装不正确。请与管理员联系。',
+	'pdf_prince_error' => 'PDF创建软件无法创建PDF。如果问题持续存在，请与管理员联系。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
