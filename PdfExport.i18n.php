@@ -486,6 +486,22 @@ $messages['gl'] = array(
 	'pdf_prince_error' => 'O software de creación de ficheiros PDF non foi capaz de crear o PDF. Se o problema continúa, póñase en contacto cun administrador.',
 );
 
+/** Hebrew (עברית)
+ * @author חיים
+ */
+$messages['he'] = array(
+	'pdf_margins_label_bottom' => 'כפתור',
+	'pdf_print_link' => 'הדפסה כקובץ PDF',
+	'pdf_submit' => 'צור PDF',
+	'pdf_pass_protect_yes' => 'כן',
+	'pdf_pass_protect_no' => 'לא',
+	'pdf_owner_pass_label' => 'סיסמת בעלים',
+	'pdf_user_pass_label' => 'סיסמת משתמש',
+	'pdf_perm_print_label' => 'להדפיס תמיד?',
+	'pdf_perm_print_yes' => 'כן',
+	'pdf_perm_print_no' => 'לא',
+);
+
 /** Hindi (हिन्दी)
  * @author Karthi.dr
  */
