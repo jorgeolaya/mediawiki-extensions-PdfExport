@@ -54,6 +54,11 @@ $specialPageAliases['nl'] = array(
 	'PdfPrint' => array( 'PDFAfdrukken' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'PdfPrint' => array( 'StampaInPdf' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'PdfPrint' => array( 'PDF导出', 'PDF打印' ),
