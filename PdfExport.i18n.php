@@ -836,6 +836,7 @@ $messages['lb'] = array(
 	'pdf_perm_copy_label' => 'Kopéiere vum Text erlaben?',
 	'pdf_perm_copy_yes' => 'jo',
 	'pdf_perm_copy_no' => 'neen',
+	'pdf_perm_annotate_label' => 'Notizen erlaben?',
 	'pdf_perm_annotate_yes' => 'jo',
 	'pdf_perm_annotate_no' => 'neen',
 	'pdf_size' => 'Pabeiergréisst',
