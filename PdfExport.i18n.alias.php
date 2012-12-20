@@ -59,6 +59,11 @@ $specialPageAliases['scn'] = array(
 	'PdfPrint' => array( 'StampaInPdf' ),
 );
 
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'PdfPrint' => array( 'In_PDF', 'Xuất_PDF' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'PdfPrint' => array( 'PDF导出', 'PDF打印' ),
