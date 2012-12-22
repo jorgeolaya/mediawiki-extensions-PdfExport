@@ -317,6 +317,9 @@ $messages['et'] = array(
 	'pdf_margins_label_top' => 'ülaosa',
 	'pdf_margins_label_sides' => 'küljed',
 	'pdf_margins_label_bottom' => 'alaosa',
+	'pdf_submit' => 'Tee PDF',
+	'pdf_portrait' => 'Portree',
+	'pdf_landscape' => 'Maastik',
 	'pdf_pass_protect_label' => 'Parooli kaitsmine',
 	'pdf_pass_protect_yes' => 'jah',
 	'pdf_pass_protect_no' => 'ei',
@@ -348,6 +351,25 @@ $messages['eu'] = array(
 	'pdf_perm_copy_no' => 'ez',
 	'pdf_perm_annotate_yes' => 'bai',
 	'pdf_perm_annotate_no' => 'ez',
+);
+
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'pdf_margins_label_top' => 'بالا',
+	'pdf_margins_label_bottom' => 'پایین',
+	'pdf_pass_protect_yes' => 'بله',
+	'pdf_pass_protect_no' => 'خیر',
+	'pdf_perm_print_yes' => 'بله',
+	'pdf_perm_print_no' => 'خیر',
+	'pdf_perm_modify_yes' => 'بله',
+	'pdf_perm_modify_no' => 'خیر',
+	'pdf_perm_copy_yes' => 'بله',
+	'pdf_perm_copy_no' => 'خیر',
+	'pdf_perm_annotate_yes' => 'بله',
+	'pdf_perm_annotate_no' => 'خیر',
+	'pdf_filename' => 'نام پرونده:',
 );
 
 /** Finnish (suomi)
@@ -650,6 +672,21 @@ $messages['ia'] = array(
 	'pdf_export_no_converter_found' => 'Nulle software pro le conversion in PDF ha essite trovate. Per favor installa PrinceXML, DomPdf o HTMLDoc.',
 	'pdf_prince_error_not_installed' => 'Le software de creation de PDF PrinceXML non es installate correctemente. Per favor contacta un administrator.',
 	'pdf_prince_error' => 'Le software de creation de PDF non ha potite crear le PDF. Si le problema persiste, per favor contacta un administrator.',
+);
+
+/** Indonesian (Bahasa Indonesia)
+ * @author Farras
+ */
+$messages['id'] = array(
+	'pdf_pass_protect_yes' => 'ya',
+	'pdf_pass_protect_no' => 'tidak',
+	'pdf_perm_print_yes' => 'ya',
+	'pdf_perm_print_no' => 'tidak',
+	'pdf_perm_modify_yes' => 'ya',
+	'pdf_perm_modify_no' => 'tidak',
+	'pdf_perm_copy_yes' => 'ya',
+	'pdf_perm_copy_no' => 'tidak',
+	'pdf_perm_annotate_yes' => 'ya',
 );
 
 /** Italian (italiano)
@@ -1170,9 +1207,17 @@ $messages['ru'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'pdfprint' => 'PDF නිර්යාත කිරීම',
 	'pdf_margins_label_top' => 'ඉහළ',
+	'pdf_margins_label_bottom' => 'අඩිය',
+	'pdf_submit' => 'PDF තනන්න',
+	'pdf_portrait' => 'ආල්ඛ්‍ය තලීය',
+	'pdf_landscape' => 'භූතල තලීය',
+	'pdf_pass_protect_label' => 'මුරපද ආරක්ෂණය',
 	'pdf_pass_protect_yes' => 'ඔව්',
 	'pdf_pass_protect_no' => 'නැත',
+	'pdf_owner_pass_label' => 'අයිතිකරුගේ මුරපදය',
+	'pdf_user_pass_label' => 'ලිපි සාරාංශය',
 	'pdf_perm_print_yes' => 'ඔව්',
 	'pdf_perm_print_no' => 'නැත',
 	'pdf_perm_modify_yes' => 'ඔව්',
