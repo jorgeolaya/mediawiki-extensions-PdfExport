@@ -106,6 +106,22 @@ $messages['qqq'] = array(
 	'pdf_prince_error' => 'An error message describing a general error encountered when running the Prince PDF backend',
 );
 
+/** Bulgarian (български)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['bg'] = array(
+	'pdf_pass_protect_yes' => 'да',
+	'pdf_pass_protect_no' => 'не',
+	'pdf_perm_print_yes' => 'да',
+	'pdf_perm_print_no' => 'не',
+	'pdf_perm_modify_yes' => 'да',
+	'pdf_perm_modify_no' => 'не',
+	'pdf_perm_copy_yes' => 'да',
+	'pdf_perm_copy_no' => 'не',
+	'pdf_perm_annotate_yes' => 'да',
+	'pdf_perm_annotate_no' => 'не',
+);
+
 /** Breton (brezhoneg)
  * @author Y-M D
  */
@@ -676,6 +692,7 @@ $messages['ia'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author Farras
+ * @author පසිඳු කාවින්ද
  */
 $messages['id'] = array(
 	'pdf_pass_protect_yes' => 'ya',
@@ -687,6 +704,7 @@ $messages['id'] = array(
 	'pdf_perm_copy_yes' => 'ya',
 	'pdf_perm_copy_no' => 'tidak',
 	'pdf_perm_annotate_yes' => 'ya',
+	'pdf_perm_annotate_no' => 'tidak',
 );
 
 /** Italian (italiano)
