@@ -284,6 +284,16 @@ $messages['dsb'] = array(
 	'pdf_prince_error' => 'Softwara za napóranje PDF-datajow njamóžo PDF-dataje napóraś. Jolic toś ten problem dalej eksistěrujo, staj se z administratorom do zwiska.',
 );
 
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'pdf_pass_protect_yes' => 'jes',
+	'pdf_pass_protect_no' => 'ne',
+	'pdf_perm_annotate_yes' => 'jes',
+	'pdf_perm_annotate_no' => 'ne',
+);
+
 /** Spanish (español)
  * @author Armando-Martin
  */
@@ -1162,6 +1172,7 @@ $messages['ro'] = array(
 	'pdf_pass_protect_label' => 'Protecție pentru parolă',
 	'pdf_pass_protect_yes' => 'da',
 	'pdf_pass_protect_no' => 'nu',
+	'pdf_owner_pass_label' => 'Parola deținătorului',
 	'pdf_user_pass_label' => 'Parola utilizatorului',
 	'pdf_perm_print_label' => 'Permiteți tipărirea?',
 	'pdf_perm_print_yes' => 'da',
