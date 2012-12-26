@@ -340,9 +340,12 @@ $messages['es'] = array(
  * @author Avjoska
  */
 $messages['et'] = array(
+	'pdfprint' => 'PDF-i eksport',
+	'pdfprint_error' => 'Viga PDF-faili eksportimisel',
 	'pdf_margins_label_top' => 'ülaosa',
 	'pdf_margins_label_sides' => 'küljed',
 	'pdf_margins_label_bottom' => 'alaosa',
+	'pdf_print_link' => 'Konverdi PDFiks',
 	'pdf_submit' => 'Tee PDF',
 	'pdf_portrait' => 'Portree',
 	'pdf_landscape' => 'Maastik',
@@ -351,6 +354,7 @@ $messages['et'] = array(
 	'pdf_pass_protect_no' => 'ei',
 	'pdf_owner_pass_label' => 'Omaniku parool',
 	'pdf_user_pass_label' => 'Kasutaja parool',
+	'pdf_perm_print_label' => 'Lubada printimine?',
 	'pdf_perm_print_yes' => 'jah',
 	'pdf_perm_print_no' => 'ei',
 	'pdf_perm_modify_yes' => 'jah',
@@ -1098,6 +1102,48 @@ $messages['pl'] = array(
 	'pdf_export_no_converter_found' => 'Nie udało się znaleźć żadnego oprogramowanie do konwersji PDF. Należy zainstalować PrinceXML, DomPdf lub HTMLDoc.',
 	'pdf_prince_error_not_installed' => 'Oprogramowanie do tworzenia PDF PrinceXML nie jest poprawnie zainstalowane. Skontaktuj się z administratorem.',
 	'pdf_prince_error' => 'Program do tworzenia PDF nie mógł utworzyć pliku PDF. Jeśli problem będzie się powtarzał, skontaktuj się z administratorem.',
+);
+
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'pdfexport-desc' => 'A espòrta na pagina com PDF',
+	'pdfprint' => 'Esportassion an PDF',
+	'pdfprint_error' => 'Esportassion ëd PDF - Eror',
+	'pdf_fontface_label' => 'Sòrt caràter',
+	'pdf_fontsize_label' => 'Dimension caràter',
+	'pdf_margins_label' => 'Bòrd (visualisa an milìmetr)',
+	'pdf_margins_label_top' => 'superior',
+	'pdf_margins_label_sides' => 'lateraj',
+	'pdf_margins_label_bottom' => 'anferior',
+	'pdf_print_link' => 'Stampa com PDF',
+	'pdf_print_text' => "Anseriss ël tìtol ëd la pagina ch'it veule esporté an PDF",
+	'pdf_submit' => 'Fà un PDF',
+	'pdf_portrait' => 'Ritrat',
+	'pdf_landscape' => 'Paisagi',
+	'pdf_pass_protect_label' => 'Protession ëd ciav',
+	'pdf_pass_protect_yes' => 'é!',
+	'pdf_pass_protect_no' => 'nò',
+	'pdf_owner_pass_label' => 'Ciav dël propietari',
+	'pdf_user_pass_label' => 'Ciav utent',
+	'pdf_perm_print_label' => 'Përmëtte la stampa?',
+	'pdf_perm_print_yes' => 'é!',
+	'pdf_perm_print_no' => 'nò',
+	'pdf_perm_modify_label' => 'Përmëtte modìfiche?',
+	'pdf_perm_modify_yes' => 'é!',
+	'pdf_perm_modify_no' => 'nò',
+	'pdf_perm_copy_label' => 'Përmëtte ëd copié ël test?',
+	'pdf_perm_copy_yes' => 'é!',
+	'pdf_perm_copy_no' => 'nò',
+	'pdf_perm_annotate_label' => 'Përmëtte anotassion?',
+	'pdf_perm_annotate_yes' => 'é!',
+	'pdf_perm_annotate_no' => 'nò',
+	'pdf_size' => 'Dimension dla carta',
+	'pdf_filename' => "Nòm dl'archivi",
+	'pdf_export_no_converter_found' => 'As treuva pa gnun software ëd Conversion ëd PDF. Për piasì istala o PrinceXML, o DomPdf, o HTMLDoc.',
+	'pdf_prince_error_not_installed' => "Ël software ëd creassion ëd PDF PrinceXML a l'é pa istala coretament. Për piasì contata n'aministrador.",
+	'pdf_prince_error' => "Ël software ëd creassion ëd PDF a l'ha pa podù creé ël PDF. Se ël problem a përsist, për piasì contata n'aministrador.",
 );
 
 /** Pashto (پښتو)
