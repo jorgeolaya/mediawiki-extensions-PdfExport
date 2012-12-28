@@ -1236,6 +1236,27 @@ $messages['ro'] = array(
 	'pdf_filename' => 'Numele fișierului',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'pdfprint' => "Esporte 'u PDF",
+	'pdfprint_error' => "Esporte 'u PDF - Errore",
+	'pdf_margins_label_top' => 'sus',
+	'pdf_margins_label_sides' => 'de late',
+	'pdf_margins_label_bottom' => 'sotte',
+	'pdf_pass_protect_yes' => 'sìne',
+	'pdf_pass_protect_no' => 'none',
+	'pdf_perm_print_yes' => 'sìne',
+	'pdf_perm_print_no' => 'none',
+	'pdf_perm_modify_yes' => 'sìne',
+	'pdf_perm_modify_no' => 'none',
+	'pdf_perm_copy_yes' => 'sìne',
+	'pdf_perm_copy_no' => 'none',
+	'pdf_perm_annotate_yes' => 'sìne',
+	'pdf_perm_annotate_no' => 'none',
+);
+
 /** Russian (русский)
  * @author Kalan
  */
