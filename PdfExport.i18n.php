@@ -1105,24 +1105,25 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'pdfexport-desc' => 'A espòrta na pagina com PDF',
+	'pdfexport-desc' => 'A smon na pàgina com PDF',
 	'pdfprint' => 'Esportassion an PDF',
 	'pdfprint_error' => 'Esportassion ëd PDF - Eror',
-	'pdf_fontface_label' => 'Sòrt caràter',
-	'pdf_fontsize_label' => 'Dimension caràter',
-	'pdf_margins_label' => 'Bòrd (visualisa an milìmetr)',
+	'pdf_fontface_label' => 'Sòrt ëd caràter',
+	'pdf_fontsize_label' => 'Dimension dij caràter',
+	'pdf_margins_label' => 'Bordure (visualisassion an milim)',
 	'pdf_margins_label_top' => 'superior',
 	'pdf_margins_label_sides' => 'lateraj',
 	'pdf_margins_label_bottom' => 'anferior',
 	'pdf_print_link' => 'Stampa com PDF',
-	'pdf_print_text' => "Anseriss ël tìtol ëd la pagina ch'it veule esporté an PDF",
+	'pdf_print_text' => "Ch'a anserissa ël tìtol ëd la pàgina ch'a veul esporté an PDF",
 	'pdf_submit' => 'Fà un PDF',
 	'pdf_portrait' => 'Ritrat',
 	'pdf_landscape' => 'Paisagi',
-	'pdf_pass_protect_label' => 'Protession ëd ciav',
+	'pdf_pass_protect_label' => 'Protession con ciav',
 	'pdf_pass_protect_yes' => 'é!',
 	'pdf_pass_protect_no' => 'nò',
 	'pdf_owner_pass_label' => 'Ciav dël propietari',
@@ -1130,18 +1131,18 @@ $messages['pms'] = array(
 	'pdf_perm_print_label' => 'Përmëtte la stampa?',
 	'pdf_perm_print_yes' => 'é!',
 	'pdf_perm_print_no' => 'nò',
-	'pdf_perm_modify_label' => 'Përmëtte modìfiche?',
+	'pdf_perm_modify_label' => 'Përmëtte la modìfica?',
 	'pdf_perm_modify_yes' => 'é!',
 	'pdf_perm_modify_no' => 'nò',
 	'pdf_perm_copy_label' => 'Përmëtte ëd copié ël test?',
 	'pdf_perm_copy_yes' => 'é!',
 	'pdf_perm_copy_no' => 'nò',
-	'pdf_perm_annotate_label' => 'Përmëtte anotassion?',
+	'pdf_perm_annotate_label' => "Përmëtte j'anotassion?",
 	'pdf_perm_annotate_yes' => 'é!',
 	'pdf_perm_annotate_no' => 'nò',
 	'pdf_size' => 'Dimension dla carta',
 	'pdf_filename' => "Nòm dl'archivi",
-	'pdf_export_no_converter_found' => 'As treuva pa gnun software ëd Conversion ëd PDF. Për piasì istala o PrinceXML, o DomPdf, o HTMLDoc.',
+	'pdf_export_no_converter_found' => "A l'é trovasse gnun programa ëd Conversion ëd PDF. Për piasì, ch'a istala PrinceXML, DomPdf o HTMLDoc.",
 	'pdf_prince_error_not_installed' => "Ël software ëd creassion ëd PDF PrinceXML a l'é pa istala coretament. Për piasì contata n'aministrador.",
 	'pdf_prince_error' => "Ël software ëd creassion ëd PDF a l'ha pa podù creé ël PDF. Se ël problem a përsist, për piasì contata n'aministrador.",
 );
