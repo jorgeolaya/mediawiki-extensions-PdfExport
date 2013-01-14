@@ -1143,8 +1143,8 @@ $messages['pms'] = array(
 	'pdf_size' => 'Dimension dla carta',
 	'pdf_filename' => "Nòm dl'archivi",
 	'pdf_export_no_converter_found' => "A l'é trovasse gnun programa ëd Conversion ëd PDF. Për piasì, ch'a istala PrinceXML, DomPdf o HTMLDoc.",
-	'pdf_prince_error_not_installed' => "Ël software ëd creassion ëd PDF PrinceXML a l'é pa istala coretament. Për piasì contata n'aministrador.",
-	'pdf_prince_error' => "Ël software ëd creassion ëd PDF a l'ha pa podù creé ël PDF. Se ël problem a përsist, për piasì contata n'aministrador.",
+	'pdf_prince_error_not_installed' => "Ël programa ëd creassion ëd PDF PrinceXML a l'é pa istala coretament. Për piasì, ch'a contata n'aministrator.",
+	'pdf_prince_error' => "Ël programa ëd creassion ëd PDF a l'ha pa podù creé ël PDF. Se ël problema a përsist, për piasì ch'a contata n'aministrator.",
 );
 
 /** Pashto (پښتو)
