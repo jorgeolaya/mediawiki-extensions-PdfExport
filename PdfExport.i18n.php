@@ -1339,6 +1339,48 @@ $messages['si'] = array(
 	'pdf_filename' => 'ගොනුනාමය',
 );
 
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'pdfexport-desc' => 'Renderar en sida som PDF',
+	'pdfprint' => 'PDF-exportering',
+	'pdfprint_error' => 'PDF-exportering - fel',
+	'pdf_fontface_label' => 'Typsnitt',
+	'pdf_fontsize_label' => 'Teckenstorlek',
+	'pdf_margins_label' => 'Marginaler (visas i millimeter)',
+	'pdf_margins_label_top' => 'toppen',
+	'pdf_margins_label_sides' => 'sidor',
+	'pdf_margins_label_bottom' => 'botten',
+	'pdf_print_link' => 'Skriv ut som PDF',
+	'pdf_print_text' => 'Ange titeln på sidan som du vill exportera till PDF',
+	'pdf_submit' => 'Skapa PDF',
+	'pdf_portrait' => 'Porträtt',
+	'pdf_landscape' => 'Landskap',
+	'pdf_pass_protect_label' => 'Lösenordsskydd',
+	'pdf_pass_protect_yes' => 'ja',
+	'pdf_pass_protect_no' => 'nej',
+	'pdf_owner_pass_label' => 'Ägarens lösenord',
+	'pdf_user_pass_label' => 'Användarens lösenord',
+	'pdf_perm_print_label' => 'Tillåt utskrift?',
+	'pdf_perm_print_yes' => 'ja',
+	'pdf_perm_print_no' => 'nej',
+	'pdf_perm_modify_label' => 'Tillåt ändringar?',
+	'pdf_perm_modify_yes' => 'ja',
+	'pdf_perm_modify_no' => 'nej',
+	'pdf_perm_copy_label' => 'Tillåt att kopiera text?',
+	'pdf_perm_copy_yes' => 'ja',
+	'pdf_perm_copy_no' => 'nej',
+	'pdf_perm_annotate_label' => 'Tillåt anteckningar?',
+	'pdf_perm_annotate_yes' => 'ja',
+	'pdf_perm_annotate_no' => 'nej',
+	'pdf_size' => 'Pappersstorlek',
+	'pdf_filename' => 'Filnamn',
+	'pdf_export_no_converter_found' => 'Ingen programvara för PDF-konvertering kunde hittas. Var god installera PrinceXML, DomPdf, eller HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'Programvaran PrinceXML som skapar PDF-dokument har inte installerats riktigt. Var god kontakta en administratör.',
+	'pdf_prince_error' => 'Programvaran PrinceXML som skapar PDF-dokument kunde inte skapa PDF-dokumentet. Om problemet kvarstår, var god kontakt en administratör.',
+);
+
 /** Tamil (தமிழ்)
  * @author Karthi.dr
  * @author Shanmugamp7
@@ -1548,6 +1590,7 @@ $messages['zh-hans'] = array(
 	'pdfexport-desc' => '导出页面为 PDF',
 	'pdfprint' => 'PDF 导出',
 	'pdfprint_error' => 'PDF 导出 - 错误',
+	'pdf_fontface_label' => 'Fontface',
 	'pdf_fontsize_label' => '字体大小',
 	'pdf_margins_label' => '页边空白（以毫米为单位）',
 	'pdf_margins_label_top' => '顶',
@@ -1555,6 +1598,7 @@ $messages['zh-hans'] = array(
 	'pdf_margins_label_bottom' => '底',
 	'pdf_print_link' => '打印为 PDF',
 	'pdf_print_text' => '请输入您要导出为PDF的页面标题',
+	'pdf_submit' => '做PDF',
 	'pdf_pass_protect_label' => '密码保护',
 	'pdf_pass_protect_yes' => '是',
 	'pdf_pass_protect_no' => '否',
