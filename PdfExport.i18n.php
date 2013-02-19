@@ -66,13 +66,15 @@ A4',
 /** Message documentation (Message documentation)
  * @author Cneubauer
  * @author Kghbln
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
 	'pdfexport-desc' => '{{desc}}',
 	'pdfprint' => 'The title of the special page and the text of the link to it on [[Special:SpecialPages]]',
 	'pdfprint_error' => 'The page title if there is an error',
 	'pdf_fontface_label' => 'The special page form label for the fontface',
-	'pdf_fontsize_label' => 'The special page form label for the fontsize',
+	'pdf_fontsize_label' => 'The special page form label for the fontsize.
+{{Identical|Font size}}',
 	'pdf_margins_label' => 'The special page form label for the margins',
 	'pdf_margins_label_top' => 'The special page form label for the margin top',
 	'pdf_margins_label_sides' => 'The special page form label for the margin sides',
