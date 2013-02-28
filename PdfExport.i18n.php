@@ -69,7 +69,7 @@ A4',
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'pdfexport-desc' => '{{desc}}',
+	'pdfexport-desc' => '{{desc|name=Pdf Export|url=http://www.mediawiki.org/wiki/Extension:PdfExport}}',
 	'pdfprint' => 'The title of the special page and the text of the link to it on [[Special:SpecialPages]]',
 	'pdfprint_error' => 'The page title if there is an error',
 	'pdf_fontface_label' => 'The special page form label for the fontface',
