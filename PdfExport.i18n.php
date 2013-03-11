@@ -125,6 +125,7 @@ $messages['bg'] = array(
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Y-M D
  */
 $messages['br'] = array(
@@ -132,6 +133,7 @@ $messages['br'] = array(
 	'pdfprint' => 'Ezporzh PDF',
 	'pdfprint_error' => 'Ezporzh PDF - Fazi',
 	'pdf_fontsize_label' => 'Ment ar font',
+	'pdf_margins_label_top' => "krec'h",
 	'pdf_margins_label_sides' => 'kostezioù',
 	'pdf_margins_label_bottom' => 'traoñ',
 	'pdf_print_link' => 'Moullañ er furmad PDF',
@@ -886,6 +888,19 @@ $messages['ko'] = array(
 	'pdf_export_no_converter_found' => 'PDF 변환 소프트웨어를 찾을 수 없습니다. PrinceXML, DomPdf, 또는 HTMLDoc 중 하나를 설치하세요.',
 	'pdf_prince_error_not_installed' => 'PrinceXML PDF 만들기 소프트웨어를 올바르게 설치하지 않았습니다. 관리자에게 문의하세요.',
 	'pdf_prince_error' => 'PDF 만들기 소프트웨어가 PDF를 만들 수 없습니다. 문제가 계속되면 관리자에게 문의하세요.',
+);
+
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'pdf_submit' => 'Bike PDF',
+	'pdf_pass_protect_yes' => 'erê',
+	'pdf_user_pass_label' => 'Şîfreya bikarhêner',
+	'pdf_perm_modify_yes' => 'erê',
+	'pdf_perm_copy_yes' => 'erê',
+	'pdf_perm_annotate_yes' => 'erê',
+	'pdf_filename' => 'Navê dosyeyê',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
