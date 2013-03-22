@@ -24,6 +24,11 @@ $specialPageAliases['de'] = array(
 	'PdfPrint' => array( 'PDF-Druck', 'PDF-Export' ),
 );
 
+/** Esperanto (Esperanto) */
+$specialPageAliases['eo'] = array(
+	'PdfPrint' => array( 'Presi_PDF', 'Elporti_PDF', 'Eksporti_PDF' ),
+);
+
 /** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'PdfPrint' => array( 'StampaInPdf' ),
