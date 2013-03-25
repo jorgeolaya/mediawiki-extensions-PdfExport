@@ -70,7 +70,7 @@ A4',
  */
 $messages['qqq'] = array(
 	'pdfexport-desc' => '{{desc|name=Pdf Export|url=http://www.mediawiki.org/wiki/Extension:PdfExport}}',
-	'pdfprint' => 'The title of the special page and the text of the link to it on [[Special:SpecialPages]]',
+	'pdfprint' => '{{doc-special|PdfPrint}}',
 	'pdfprint_error' => 'The page title if there is an error',
 	'pdf_fontface_label' => 'The special page form label for the fontface',
 	'pdf_fontsize_label' => 'The special page form label for the fontsize.
@@ -1277,6 +1277,8 @@ $messages['roa-tara'] = array(
 	'pdf_margins_label_top' => 'sus',
 	'pdf_margins_label_sides' => 'de late',
 	'pdf_margins_label_bottom' => 'sotte',
+	'pdf_print_link' => "Stambe cumme a 'nu PDF",
+	'pdf_submit' => "Fà 'nu PDF",
 	'pdf_pass_protect_yes' => 'sìne',
 	'pdf_pass_protect_no' => 'none',
 	'pdf_perm_print_yes' => 'sìne',
