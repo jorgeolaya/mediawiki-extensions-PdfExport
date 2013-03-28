@@ -1040,6 +1040,14 @@ $messages['mt'] = array(
 	'pdf_perm_annotate_no' => 'le',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'pdf_pass_protect_yes' => 'jo',
+	'pdf_pass_protect_no' => 'nee',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
