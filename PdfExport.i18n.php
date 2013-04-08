@@ -1663,6 +1663,7 @@ $messages['yi'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Kuailong
  * @author Shirayuki
  * @author Yfdyh000
  */
@@ -1679,6 +1680,8 @@ $messages['zh-hans'] = array(
 	'pdf_print_link' => '打印为 PDF',
 	'pdf_print_text' => '请输入您要导出为PDF的页面标题',
 	'pdf_submit' => '做PDF',
+	'pdf_portrait' => '竖屏',
+	'pdf_landscape' => '横屏',
 	'pdf_pass_protect_label' => '密码保护',
 	'pdf_pass_protect_yes' => '是',
 	'pdf_pass_protect_no' => '否',
