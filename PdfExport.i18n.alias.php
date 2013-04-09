@@ -59,6 +59,11 @@ $specialPageAliases['nl'] = array(
 	'PdfPrint' => array( 'PDFAfdrukken' ),
 );
 
+/** Russian (русский) */
+$specialPageAliases['ru'] = array(
+	'PdfPrint' => array( 'Создание_Pdf' ),
+);
+
 /** Sicilian (sicilianu) */
 $specialPageAliases['scn'] = array(
 	'PdfPrint' => array( 'StampaInPdf' ),
