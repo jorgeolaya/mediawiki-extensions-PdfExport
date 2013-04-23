@@ -76,9 +76,11 @@ $messages['qqq'] = array(
 	'pdf_fontsize_label' => 'The special page form label for the fontsize.
 {{Identical|Font size}}',
 	'pdf_margins_label' => 'The special page form label for the margins',
-	'pdf_margins_label_top' => 'The special page form label for the margin top',
+	'pdf_margins_label_top' => 'The special page form label for the margin top.
+{{Identical|Top}}',
 	'pdf_margins_label_sides' => 'The special page form label for the margin sides',
-	'pdf_margins_label_bottom' => 'The special page form label for the margin bottom',
+	'pdf_margins_label_bottom' => 'The special page form label for the margin bottom.
+{{Identical|Bottom}}',
 	'pdf_print_link' => 'The text of the link to print a page as PDF',
 	'pdf_print_text' => 'The special page form text prompting the user to enter a page title',
 	'pdf_submit' => 'The special page form submit button text',
