@@ -69,6 +69,11 @@ $specialPageAliases['scn'] = array(
 	'PdfPrint' => array( 'StampaInPdf' ),
 );
 
+/** Ukrainian (українська) */
+$specialPageAliases['uk'] = array(
+	'PdfPrint' => array( 'Створення_Pdf' ),
+);
+
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = array(
 	'PdfPrint' => array( 'In_PDF', 'Xuất_PDF' ),
