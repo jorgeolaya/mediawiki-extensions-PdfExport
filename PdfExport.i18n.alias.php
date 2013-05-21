@@ -44,6 +44,11 @@ $specialPageAliases['ko'] = array(
 	'PdfPrint' => array( 'Pdf인쇄', 'Pdf내보내기' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$specialPageAliases['lb'] = array(
+	'PdfPrint' => array( 'PDF-Drécken', 'PDF-Export' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'PdfPrint' => array( 'Pdfпечатење', 'Pdf_извоз' ),
