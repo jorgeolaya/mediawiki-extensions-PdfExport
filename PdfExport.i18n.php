@@ -1176,7 +1176,7 @@ $messages['nl'] = array(
 	'pdf_prince_error' => 'De software voor het maken van PDF-bestanden was niet in staat een PDF-bestand te maken. Neem contact op met een systeembeheerder als het probleem aanhoudt.',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Jnanaranjan Sahu
  */
 $messages['or'] = array(
@@ -1300,6 +1300,7 @@ $messages['ps'] = array(
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Luckas
  * @author Luckas Blade
  */
 $messages['pt-br'] = array(
