@@ -36,7 +36,7 @@ $specialPageAliases['it'] = array(
 
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
-	'PdfPrint' => array( 'PDFエクスポート' ),
+	'PdfPrint' => array( 'PDF書き出し', 'PDFエクスポート' ),
 );
 
 /** Korean (한국어) */
