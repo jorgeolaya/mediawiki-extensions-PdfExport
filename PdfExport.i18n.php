@@ -256,6 +256,14 @@ $messages['ca'] = array(
 	'pdf_prince_error' => 'El programari de creació de PDF no ha estat capaç de crear el PDF. Si el problema continua contacteu amb un administrador.',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'pdf_fontsize_label' => 'Барам',
+	'pdf_filename' => 'Файлан цӀе',
+);
+
 /** Czech (česky)
  * @author Vks
  */
