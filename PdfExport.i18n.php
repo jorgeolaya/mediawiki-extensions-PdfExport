@@ -87,25 +87,30 @@ $messages['qqq'] = array(
 	'pdf_portrait' => 'The text for the portrait layout option',
 	'pdf_landscape' => 'The text for the landscaape layout option',
 	'pdf_pass_protect_label' => 'The special page form label for the password protection',
-	'pdf_pass_protect_yes' => 'The special page text for the yes option for password protection',
+	'pdf_pass_protect_yes' => 'The special page text for the yes option for password protection.
+{{Identical|Yes}}',
 	'pdf_pass_protect_no' => 'The special page text for the no option for password protection.
 {{Identical|No}}',
 	'pdf_owner_pass_label' => 'The special page form label for the owner password',
 	'pdf_user_pass_label' => 'The special page form label for the user password',
 	'pdf_perm_print_label' => 'The special page form label for the allow printing permission',
-	'pdf_perm_print_yes' => 'The special page text for the yes option for print permission',
+	'pdf_perm_print_yes' => 'The special page text for the yes option for print permission.
+{{Identical|Yes}}',
 	'pdf_perm_print_no' => 'The special page text for the no option for print permission.
 {{Identical|No}}',
 	'pdf_perm_modify_label' => 'The special page form label for the allow modification permission',
-	'pdf_perm_modify_yes' => 'The special page text for the yes option for modification permission',
+	'pdf_perm_modify_yes' => 'The special page text for the yes option for modification permission.
+{{Identical|Yes}}',
 	'pdf_perm_modify_no' => 'The special page text for the no option for modification permission.
 {{Identical|No}}',
 	'pdf_perm_copy_label' => 'The special page form label for the allow copying text permission',
-	'pdf_perm_copy_yes' => 'The special page text for the yes option for copy text permission',
+	'pdf_perm_copy_yes' => 'The special page text for the yes option for copy text permission.
+{{Identical|Yes}}',
 	'pdf_perm_copy_no' => 'The special page text for the no option for copy text permission.
 {{Identical|No}}',
 	'pdf_perm_annotate_label' => 'The special page form label for the allow annotation permission',
-	'pdf_perm_annotate_yes' => 'The special page text for the yes option for annotation permission',
+	'pdf_perm_annotate_yes' => 'The special page text for the yes option for annotation permission.
+{{Identical|Yes}}',
 	'pdf_perm_annotate_no' => 'The special page text for the no option for annotation permission.
 {{Identical|No}}',
 	'pdf_size' => 'The special page form label for the paper size',
