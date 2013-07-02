@@ -114,7 +114,8 @@ $messages['qqq'] = array(
 	'pdf_perm_annotate_no' => 'The special page text for the no option for annotation permission.
 {{Identical|No}}',
 	'pdf_size' => 'The special page form label for the paper size',
-	'pdf_filename' => 'The special page form label for the filename',
+	'pdf_filename' => 'The special page form label for the filename.
+{{Identical|Filename}}',
 	'pdf_export_no_converter_found' => 'An error message explaining that no PDF conversion software was configured',
 	'pdf_prince_error_not_installed' => 'An error message explaining that the Prince PDF backend is not installed',
 	'pdf_prince_error' => 'An error message describing a general error encountered when running the Prince PDF backend',
