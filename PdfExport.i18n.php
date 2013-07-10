@@ -266,6 +266,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'pdf_fontface_label' => 'Шрифт',
 	'pdf_fontsize_label' => 'Барам',
 	'pdf_filename' => 'Файлан цӀе',
 );
