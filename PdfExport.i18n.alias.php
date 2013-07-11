@@ -29,6 +29,11 @@ $specialPageAliases['eo'] = array(
 	'PdfPrint' => array( 'Presi_PDF', 'Elporti_PDF', 'Eksporti_PDF' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'PdfPrint' => array( 'برون‌برد_پی‌دی‌اف' ),
+);
+
 /** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'PdfPrint' => array( 'StampaInPdf' ),
