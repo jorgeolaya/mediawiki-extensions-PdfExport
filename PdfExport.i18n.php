@@ -1194,18 +1194,18 @@ $messages['nds'] = array(
  * @author Siebrand
  */
 $messages['nl'] = array(
-	'pdfexport-desc' => 'Geeft uitvoer van een pagina in PDF-opmaak',
-	'pdfprint' => 'Naar PDF exporteren',
-	'pdfprint_error' => 'PDF-export - Fout',
+	'pdfexport-desc' => 'Geeft uitvoer van een pagina in pdfopmaak',
+	'pdfprint' => 'Naar pdf exporteren',
+	'pdfprint_error' => 'Pdfexport - Fout',
 	'pdf_fontface_label' => 'Lettertype',
 	'pdf_fontsize_label' => 'Lettergrootte',
 	'pdf_margins_label' => 'Marges (weergave in millimeters)',
 	'pdf_margins_label_top' => 'boven',
 	'pdf_margins_label_sides' => 'zijkanten',
 	'pdf_margins_label_bottom' => 'onder',
-	'pdf_print_link' => 'Afdrukken als PDF',
-	'pdf_print_text' => 'Geef de naam op van de pagina die u als PDF wilt exporteren',
-	'pdf_submit' => 'PDF maken',
+	'pdf_print_link' => 'Afdrukken als pdf',
+	'pdf_print_text' => 'Geef de naam op van de pagina die u als pdf wilt exporteren',
+	'pdf_submit' => 'Pdf maken',
 	'pdf_portrait' => 'Portret',
 	'pdf_landscape' => 'Landschap',
 	'pdf_pass_protect_label' => 'Wachtwoordbeveiliging',
@@ -1227,9 +1227,9 @@ $messages['nl'] = array(
 	'pdf_perm_annotate_no' => 'nee',
 	'pdf_size' => 'Papierformaat',
 	'pdf_filename' => 'Bestandsnaam',
-	'pdf_export_no_converter_found' => 'Er is geen software aangetroffen voor omzetten naar PDF. Installeer PrinceXML, DomPdf of HTMLDoc.',
-	'pdf_prince_error_not_installed' => 'PrinceXML, de software voor het maken van PDF-bestanden, is niet correct geïnstalleerd. Neem contact op met een systeembeheerder.',
-	'pdf_prince_error' => 'De software voor het maken van PDF-bestanden was niet in staat een PDF-bestand te maken. Neem contact op met een systeembeheerder als het probleem aanhoudt.',
+	'pdf_export_no_converter_found' => 'Er is geen software aangetroffen voor omzetten naar pdf. Installeer PrinceXML, DomPdf of HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'PrinceXML, de software voor het maken van pdfbestanden, is niet correct geïnstalleerd. Neem contact op met een systeembeheerder.',
+	'pdf_prince_error' => 'De software voor het maken van pdfbestanden was niet in staat een pdfbestand te maken. Neem contact op met een systeembeheerder als het probleem aanhoudt.',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
