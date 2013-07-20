@@ -301,6 +301,22 @@ $messages['cs'] = array(
 	'pdf_filename' => 'Název souboru',
 );
 
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+ * @author ОйЛ
+ */
+$messages['cu'] = array(
+	'pdf_pass_protect_yes' => 'да',
+	'pdf_pass_protect_no' => 'нѣтъ',
+	'pdf_perm_print_yes' => 'да',
+	'pdf_perm_print_no' => 'нѣтъ',
+	'pdf_perm_modify_yes' => 'да',
+	'pdf_perm_modify_no' => 'нѣтъ',
+	'pdf_perm_copy_yes' => 'да',
+	'pdf_perm_copy_no' => 'нѣтъ',
+	'pdf_perm_annotate_yes' => 'да',
+	'pdf_perm_annotate_no' => 'нѣтъ',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
