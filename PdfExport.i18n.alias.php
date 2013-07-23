@@ -19,6 +19,11 @@ $specialPageAliases['ar'] = array(
 	'PdfPrint' => array( 'طبع_بي_دي_إف', 'تصدير_بي_دي_إف' ),
 );
 
+/** Chechen (нохчийн) */
+$specialPageAliases['ce'] = array(
+	'PdfPrint' => array( 'Кхоллар_Pdf' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'PdfPrint' => array( 'PDF-Druck', 'PDF-Export' ),
