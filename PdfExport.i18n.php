@@ -1064,6 +1064,7 @@ $messages['ku-latn'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'pdfexport-desc' => 'Transforméiert eng Säit a PDF',
@@ -1081,7 +1082,7 @@ $messages['lb'] = array(
 	'pdf_pass_protect_label' => 'Passwuertschutz',
 	'pdf_pass_protect_yes' => 'jo',
 	'pdf_pass_protect_no' => 'neen',
-	'pdf_owner_pass_label' => 'Passwuert vum Proprietaire',
+	'pdf_owner_pass_label' => 'Passwuert vum Proprietär',
 	'pdf_user_pass_label' => 'Benotzer-Passwuert',
 	'pdf_perm_print_label' => 'Drécken erlaben?',
 	'pdf_perm_print_yes' => 'jo',
