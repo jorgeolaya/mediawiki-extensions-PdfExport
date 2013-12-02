@@ -222,6 +222,7 @@ $messages['br'] = array(
 
 /** Catalan (català)
  * @author Aleator
+ * @author Papapep
  */
 $messages['ca'] = array(
 	'pdfexport-desc' => 'Renderitza una pàgina en format PDF',
@@ -259,7 +260,7 @@ $messages['ca'] = array(
 	'pdf_filename' => 'Nom del fitxer',
 	'pdf_export_no_converter_found' => "No s'ha pogut trobar cap programari de conversió a PDF. Instal·leu PrinceXML, DomPdf o HTMLDoc.",
 	'pdf_prince_error_not_installed' => 'El programari de creació de PDF PrinceXML no està instal·lat correctament. Contacteu amb un administrador.',
-	'pdf_prince_error' => 'El programari de creació de PDF no ha estat capaç de crear el PDF. Si el problema continua contacteu amb un administrador.',
+	'pdf_prince_error' => 'El programari de creació de PDF no ha pogut crear el PDF. Si el problema continua contacteu amb un administrador.',
 );
 
 /** Chechen (нохчийн)
