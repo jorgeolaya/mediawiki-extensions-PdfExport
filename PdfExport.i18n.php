@@ -273,7 +273,7 @@ $messages['ce'] = array(
 	'pdf_filename' => 'Файлан цӀе',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Vks
  */
 $messages['cs'] = array(
@@ -303,7 +303,7 @@ $messages['cs'] = array(
 	'pdf_filename' => 'Název souboru',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
