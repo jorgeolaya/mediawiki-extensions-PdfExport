@@ -518,10 +518,12 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author Reza1615
  */
 $messages['fa'] = array(
 	'pdf_margins_label_top' => 'بالا',
 	'pdf_margins_label_bottom' => 'پایین',
+	'pdf_print_link' => 'چاپ در قالب پی‌دی‌اف',
 	'pdf_pass_protect_yes' => 'بله',
 	'pdf_pass_protect_no' => 'خیر',
 	'pdf_perm_print_yes' => 'بله',
