@@ -324,6 +324,24 @@ $messages['cu'] = array(
 	'pdf_perm_annotate_no' => 'нѣтъ',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'pdfexport-desc' => 'Yn llunio tudalen ar ffurf PDF',
+	'pdfprint' => 'Allforio PDF',
+	'pdfprint_error' => 'Allforio PDF - Gwall',
+	'pdf_margins_label' => 'Ymylon (milimedrau)',
+	'pdf_margins_label_top' => 'y brig',
+	'pdf_margins_label_sides' => 'yr ochrau',
+	'pdf_margins_label_bottom' => 'y gwaelod',
+	'pdf_print_link' => 'Argraffu fel PDF',
+	'pdf_portrait' => 'Portread',
+	'pdf_landscape' => 'Tirwedd',
+	'pdf_size' => 'Maint y papur',
+	'pdf_filename' => "Enw'r ffeil",
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
