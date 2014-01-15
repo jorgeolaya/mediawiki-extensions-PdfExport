@@ -113,7 +113,8 @@ $messages['qqq'] = array(
 {{Identical|Yes}}',
 	'pdf_perm_annotate_no' => 'The special page text for the no option for annotation permission.
 {{Identical|No}}',
-	'pdf_size' => 'The special page form label for the paper size',
+	'pdf_size' => 'The special page form label for the paper size.
+{{Identical|Paper size}}',
 	'pdf_filename' => 'The special page form label for the filename.
 {{Identical|Filename}}',
 	'pdf_export_no_converter_found' => 'An error message explaining that no PDF conversion software was configured',
