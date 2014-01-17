@@ -1164,8 +1164,8 @@ $messages['mk'] = array(
 	'pdf_perm_annotate_no' => 'не',
 	'pdf_size' => 'Големина на листот',
 	'pdf_filename' => 'Име на податотеката',
-	'pdf_export_no_converter_found' => 'Не пронајдов програм за претворање во PDF. Инсталирајте еден од следниве: PrinceXML, DomPdf или HTMLDoc.',
-	'pdf_prince_error_not_installed' => 'Програмот PrinceXML за создавање на PDF не е инсталиран како што треба. Обратете се кај администраторот.',
+	'pdf_export_no_converter_found' => 'Не пронајдов програм за претворање во PDF. Воспоставете еден од следниве: PrinceXML, DomPdf или HTMLDoc.',
+	'pdf_prince_error_not_installed' => 'Програмот PrinceXML за создавање на PDF не е воспоставен како што треба. Обратете се кај администраторот.',
 	'pdf_prince_error' => 'Програмот за испис на PDF не можеш да ја создаде податотеката. Обратете се кај администраторот.',
 );
 
