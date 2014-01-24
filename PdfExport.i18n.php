@@ -536,23 +536,41 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Mjbmr
  * @author Reza1615
  */
 $messages['fa'] = array(
+	'pdfprint' => 'خروجی پی‌دی‌اف',
+	'pdfprint_error' => 'خروجی پی‌دی‌اف - خطا',
+	'pdf_fontface_label' => 'ظاهر شکل حروف',
+	'pdf_fontsize_label' => 'اندازهٔ شکل حروف',
+	'pdf_margins_label' => 'حاشیه‌ها (نمایش به میلی‌متر)',
 	'pdf_margins_label_top' => 'بالا',
+	'pdf_margins_label_sides' => 'کناره‌ها',
 	'pdf_margins_label_bottom' => 'پایین',
 	'pdf_print_link' => 'چاپ در قالب پی‌دی‌اف',
+	'pdf_submit' => 'ساختن پی‌دی‌اف',
+	'pdf_portrait' => 'پرتره',
+	'pdf_landscape' => 'چشم‌انداز',
+	'pdf_pass_protect_label' => 'حفاظت رمز عبور',
 	'pdf_pass_protect_yes' => 'بله',
 	'pdf_pass_protect_no' => 'خیر',
+	'pdf_owner_pass_label' => 'رمز عبور مالک',
+	'pdf_user_pass_label' => 'رمز عبور کاربر',
+	'pdf_perm_print_label' => 'اجازهٔ چاپ؟',
 	'pdf_perm_print_yes' => 'بله',
 	'pdf_perm_print_no' => 'خیر',
+	'pdf_perm_modify_label' => 'اجازهٔ اصلاح؟',
 	'pdf_perm_modify_yes' => 'بله',
 	'pdf_perm_modify_no' => 'خیر',
+	'pdf_perm_copy_label' => 'اجازهٔ کپی کردن متن؟',
 	'pdf_perm_copy_yes' => 'بله',
 	'pdf_perm_copy_no' => 'خیر',
+	'pdf_perm_annotate_label' => 'اجازهٔ ملاحظات؟',
 	'pdf_perm_annotate_yes' => 'بله',
 	'pdf_perm_annotate_no' => 'خیر',
+	'pdf_size' => 'اندازهٔ کاغذ',
 	'pdf_filename' => 'نام پرونده:',
 );
 
