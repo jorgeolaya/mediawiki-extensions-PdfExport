@@ -270,6 +270,7 @@ $messages['ca'] = array(
 $messages['ce'] = array(
 	'pdf_fontface_label' => 'Шрифт',
 	'pdf_fontsize_label' => 'Барам',
+	'pdf_print_link' => 'Зорба тоха PDF санна',
 	'pdf_print_text' => 'ДӀаязъе PDF экспорт еш йолу агӀона цӀе',
 	'pdf_pass_protect_yes' => 'хӀаъ',
 	'pdf_perm_print_yes' => 'хӀаъ',
