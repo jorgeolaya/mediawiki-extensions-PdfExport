@@ -107,7 +107,7 @@ $specialPageAliases['vi'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
-	'PdfPrint' => array( 'PDF导出', 'PDF打印' ),
+	'PdfPrint' => array( 'PDF打印', 'PDF导出' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
