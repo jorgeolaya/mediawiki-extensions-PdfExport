@@ -542,6 +542,7 @@ $messages['eu'] = array(
  * @author Reza1615
  */
 $messages['fa'] = array(
+	'pdfexport-desc' => 'ارائهٔ یک صفحه به عنوان پی‌دی‌اف',
 	'pdfprint' => 'خروجی پی‌دی‌اف',
 	'pdfprint_error' => 'خروجی پی‌دی‌اف - خطا',
 	'pdf_fontface_label' => 'ظاهر شکل حروف',
@@ -551,6 +552,7 @@ $messages['fa'] = array(
 	'pdf_margins_label_sides' => 'کناره‌ها',
 	'pdf_margins_label_bottom' => 'پایین',
 	'pdf_print_link' => 'چاپ در قالب پی‌دی‌اف',
+	'pdf_print_text' => 'عنوان صفحه‌ای را که می‌خواهید به پی‌دی‌اف صادر کنید را وارد کنید',
 	'pdf_submit' => 'ساختن پی‌دی‌اف',
 	'pdf_portrait' => 'پرتره',
 	'pdf_landscape' => 'چشم‌انداز',
@@ -573,6 +575,10 @@ $messages['fa'] = array(
 	'pdf_perm_annotate_no' => 'خیر',
 	'pdf_size' => 'اندازهٔ کاغذ',
 	'pdf_filename' => 'نام پرونده:',
+	'pdf_export_no_converter_found' => 'هیچ مکالمهٔ نرم‌افزار پی‌دی‌اف نتوانست پیدا شود. لطفاً یا پرینس‌ایکس‌ام‌ال،دام‌پی‌دی‌اف یا اچ‌تی‌ام‌ال‌داک را نصب کنید .',
+	'pdf_prince_error_not_installed' => 'ایجاد نرم‌افزار پی‌دی‌اف پرینس‌ایکس‌ام‌ال به درستی نصب نشده‌است.
+لطفاً با یک سرپرست تماس بگیرید.',
+	'pdf_prince_error' => 'ایجاد نرم‌افزار پی‌دی‌اف قادر به ایجاد پی‌دی‌اف نبود. در صورت ادامهٔ مشکل، لطفاً یا یک سرپرست تماس بگیرید.',
 );
 
 /** Finnish (suomi)
