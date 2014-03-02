@@ -1150,6 +1150,8 @@ $messages['lb'] = array(
 	'pdf_perm_annotate_no' => 'neen',
 	'pdf_size' => 'Pabeiergréisst',
 	'pdf_filename' => 'Numm vum Fichier',
+	'pdf_export_no_converter_found' => 'Keng PDF-Ëmwandlungssoftware gouf fonnt. Installéiert w.e.g. entweder PrinceXML, DomPdf, oder HTMLDoc.',
+	'pdf_prince_error_not_installed' => "D'Software PrinceXML fir d'Uleeë vu PDF-Fichieren ass net korrekt informéiert. Kontaktéiert w.e.g. an Administrateur.",
 );
 
 /** Macedonian (македонски)
