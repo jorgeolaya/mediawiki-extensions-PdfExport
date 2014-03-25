@@ -1732,6 +1732,7 @@ $messages['te'] = array(
 
 /** Tagalog (Tagalog)
  * @author AnakngAraw
+ * @author Jojit fb
  */
 $messages['tl'] = array(
 	'pdfexport-desc' => 'Naghaharap ng isang pahina bilang PDF',
@@ -1748,11 +1749,11 @@ $messages['tl'] = array(
 	'pdf_submit' => 'Gawing PDF',
 	'pdf_portrait' => 'Larawan',
 	'pdf_landscape' => 'Tanawin',
-	'pdf_pass_protect_label' => 'Prutektahan ng hudyat',
+	'pdf_pass_protect_label' => 'Pagsasanggalan ng password',
 	'pdf_pass_protect_yes' => 'oo',
 	'pdf_pass_protect_no' => 'huwag',
-	'pdf_owner_pass_label' => 'Hudyat ng may-ari',
-	'pdf_user_pass_label' => 'Hudyat ng tagagamit',
+	'pdf_owner_pass_label' => 'Password ng may-ari',
+	'pdf_user_pass_label' => 'Password ng tagagamit o user',
 	'pdf_perm_print_label' => 'Payagan ang paglilimbag?',
 	'pdf_perm_print_yes' => 'oo',
 	'pdf_perm_print_no' => 'huwag',
