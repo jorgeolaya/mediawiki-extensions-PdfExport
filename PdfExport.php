@@ -1,7 +1,6 @@
 <?php
 /**
  * PdfExport extension - Converts the current page to PDF and sends it to the browser
- * @version 3.0.1 - 2012/08/02
  *
  * @link https://www.mediawiki.org/wiki/Extension:PdfExport Documentation
  *
@@ -31,7 +30,7 @@ $wgExtensionCredits['specialpage'][] = array(
 				'Craig Oakes',
 				'...'
 			 	),
-	'version'        => '3.0.1',
+	'version'        => '3.1.0',
 	'descriptionmsg' => 'pdfexport-desc',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Pdf_Export'
 );
@@ -39,6 +38,7 @@ $wgExtensionCredits['specialpage'][] = array(
 $dir = dirname(__FILE__).'/';
 
 # Internationalisation file
+$wgMessagesDirs['PdfPrint'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['PdfPrint'] = $dir.'PdfExport.i18n.php';
 $wgExtensionAliasesFiles['PdfPrint'] = $dir.'PdfExport.i18n.alias.php';
 $wgSpecialPageGroups['PdfPrint'] = 'pagetools';
