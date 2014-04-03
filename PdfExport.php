@@ -30,7 +30,7 @@ $wgExtensionCredits['specialpage'][] = array(
 				'Craig Oakes',
 				'...'
 			 	),
-	'version'        => '3.1.0',
+	'version'        => '3.2.0',
 	'descriptionmsg' => 'pdfexport-desc',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Pdf_Export'
 );
@@ -40,7 +40,7 @@ $dir = dirname(__FILE__).'/';
 # Internationalisation file
 $wgMessagesDirs['PdfPrint'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['PdfPrint'] = $dir.'PdfExport.i18n.php';
-$wgExtensionAliasesFiles['PdfPrint'] = $dir.'PdfExport.i18n.alias.php';
+$wgExtensionMessagesFiles['PdfPrintAlias'] = $dir.'PdfExport.i18n.alias.php';
 $wgSpecialPageGroups['PdfPrint'] = 'pagetools';
 
 # Global variables
