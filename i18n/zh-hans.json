@@ -3,7 +3,8 @@
 		"authors": [
 			"Kuailong",
 			"Shirayuki",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Liuxinyu970226"
 		]
 	},
 	"pdfexport-desc": "导出页面为 PDF",
@@ -17,7 +18,7 @@
 	"pdf_margins_label_bottom": "底",
 	"pdf_print_link": "打印为 PDF",
 	"pdf_print_text": "请输入您要导出为PDF的页面标题",
-	"pdf_submit": "做PDF",
+	"pdf_submit": "制作PDF",
 	"pdf_portrait": "竖屏",
 	"pdf_landscape": "横屏",
 	"pdf_pass_protect_label": "密码保护",
