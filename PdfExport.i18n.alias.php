@@ -50,6 +50,11 @@ $specialPageAliases['fa'] = array(
 	'PdfPrint' => array( 'برون‌برد_پی‌دی‌اف' ),
 );
 
+/** Upper Sorbian (hornjoserbsce) */
+$specialPageAliases['hsb'] = array(
+	'PdfPrint' => array( 'PDF-ćišć' ),
+);
+
 /** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'PdfPrint' => array( 'StampaInPdf' ),
