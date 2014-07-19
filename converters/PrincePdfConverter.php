@@ -102,7 +102,7 @@ class PrincePdfConverter extends PdfConverter {
 			return null;
 		}
 		
-		if( !$title->userCanRead() ) {
+		if( !$title->userCan( 'read' ) ) {
 			// @TODO throw error
 			return null;
 		}

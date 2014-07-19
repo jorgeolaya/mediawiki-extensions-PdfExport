@@ -96,7 +96,7 @@ class MPdfConverter extends PdfConverter {
 		global $wgPdfExportMaxImageWidth;
 
 		$title = Title::newFromText($page);
-		if (is_null($title) || !$title->userCanRead())
+		if (is_null($title) || !$title->userCan( 'read' ))
 			return null;
 		$article = new Article($title);
 		$parserOptions = ParserOptions::newFromUser($wgUser);
