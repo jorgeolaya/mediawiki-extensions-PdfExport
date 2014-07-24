@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Justincheng12345",
-			"Shirayuki"
+			"Shirayuki",
+			"LNDDYL"
 		]
 	},
 	"pdfexport-desc": "匯出頁面為PDF",
 	"pdfprint": "PDF匯出",
 	"pdfprint_error": "PDF匯出－錯誤",
 	"pdf_fontface_label": "Fontface",
-	"pdf_fontsize_label": "字體大小",
+	"pdf_fontsize_label": "字型大小",
 	"pdf_margins_label": "頁邊距（以毫米為單位）",
 	"pdf_margins_label_top": "頁首",
 	"pdf_margins_label_sides": "頁側",
