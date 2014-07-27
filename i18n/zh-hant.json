@@ -38,7 +38,7 @@
 	"pdf_perm_annotate_yes": "是",
 	"pdf_perm_annotate_no": "否",
 	"pdf_size": "紙張大小",
-	"pdf_filename": "文件名",
+	"pdf_filename": "檔案名稱",
 	"pdf_export_no_converter_found": "無法找到PDF轉換軟件。請安裝PrinceXML、DomPdf或HTMLDoc。",
 	"pdf_prince_error_not_installed": "PrinceXML PDF創建軟件安裝不正確。請與管理員聯絡。",
 	"pdf_prince_error": "PDF創建軟件無法創建PDF。若問題持續，請與管理員聯絡。"
