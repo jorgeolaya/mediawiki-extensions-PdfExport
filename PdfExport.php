@@ -80,7 +80,6 @@ function wfSpecialPdfNav (&$skintemplate, &$nav_urls, &$oldid, &$revid) {
 	$img_page = strpos($skintemplate->titletxt, "File:");
 	// only display for an article, not an image
 	if ($img_page > 0 || $img_page === false) {
-		wfLoadExtensionMessages('PdfPrint');
 		$nav_urls['pdfprint'] = array(
 			'text' => wfMsg('pdf_print_link'),
 			'href' => $skintemplate->makeSpecialUrl('PdfPrint', "page=".wfUrlencode("{$skintemplate->thispage}" ))
@@ -90,7 +89,6 @@ function wfSpecialPdfNav (&$skintemplate, &$nav_urls, &$oldid, &$revid) {
 }
 
 function wfSpecialPdfToolbox (&$monobook) {
-	wfLoadExtensionMessages('PdfPrint');
 	if (isset($monobook->data['nav_urls']['pdfprint']))
 		if ($monobook->data['nav_urls']['pdfprint']['href'] == '') {
 ?><li id="t-ispdf"><?php echo $monobook->msg('pdf_print_link'); ?></li><?php

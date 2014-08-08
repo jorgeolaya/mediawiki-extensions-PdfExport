@@ -41,9 +41,6 @@ class SpecialPdf extends SpecialPage {
 		global $wgRequest;
 		global $wgOut;
 
-		// For backwards compatibility
-		wfLoadExtensionMessages('PdfPrint');
-
 		if ($this->converter == null) {
 			$wgOut->setPageTitle(wfMsg('pdfprint_error'));
 			$wgOut->addHtml('<span class="errorbox">'.wfMsg('pdf_export_no_converter_found').'</span>');
