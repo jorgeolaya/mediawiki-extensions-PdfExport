@@ -90,6 +90,11 @@ $specialPageAliases['nl'] = array(
 	'PdfPrint' => array( 'PDFAfdrukken' ),
 );
 
+/** Portuguese (português) */
+$specialPageAliases['pt'] = array(
+	'PdfPrint' => array( 'Exportar_em_PDF', 'Exportar_para_PDF' ),
+);
+
 /** Russian (русский) */
 $specialPageAliases['ru'] = array(
 	'PdfPrint' => array( 'Создание_Pdf' ),
