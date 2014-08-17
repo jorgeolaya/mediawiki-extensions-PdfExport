@@ -13,16 +13,16 @@
  */
 
 class SpecialPdf extends SpecialPage {
-	var $title;
-	var $article;
-	var $html;
-	var $parserOptions;
-	var $bhtml;
+	public $title;
+	public $article;
+	public $html;
+	public $parserOptions;
+	public $bhtml;
 
 	/**
 	 * A converter to actually do the Pdf generation.
 	 */
-	var $converter;
+	public $converter;
 
 	/**
 	 * Setup the special page. Tries to detect a PDF generation tool to use. Prefers in order: PrincePDF, HtmlDoc, DomPdf.
