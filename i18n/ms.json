@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Pizza1016"
 		]
 	},
 	"pdfexport-desc": "Memaparkan halaman dalam bentuk PDF",
@@ -38,6 +39,6 @@
 	"pdf_size": "Saiz kertas",
 	"pdf_filename": "Nama fail",
 	"pdf_export_no_converter_found": "Perisian Penukar PDF tidak dijumpai. Sila pasang PrinceXML, DomPdf atau HTMLDoc.",
-	"pdf_prince_error_not_installed": "Perisian membuat PDF PrinceXML tidak dipasang dengan betul. Sila hubungi pentadbir.",
-	"pdf_prince_error": "Perisian membuat PDF tidak dapat membuat PDF. Jika masalah ini berlanjutan, sila hubungi pentadbir."
+	"pdf_prince_error_not_installed": "Perisian penciptaan PDF PrinceXML tidak dipasang dengan betul. Sila hubungi seorang penyelia.",
+	"pdf_prince_error": "Perisian penciptaan PDF tidak dapat mencipta PDF ini. Jika masalah ini berlanjutan, sila hubungi seorang penyelia."
 }
