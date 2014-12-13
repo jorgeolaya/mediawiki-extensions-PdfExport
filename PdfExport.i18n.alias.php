@@ -122,5 +122,5 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'PdfPrint' => array( 'PDF列印', 'PDF匯出' ),
+	'PdfPrint' => array( 'PDF 列印', 'PDF 匯出' ),
 );
