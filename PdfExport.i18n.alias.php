@@ -25,6 +25,11 @@ $specialPageAliases['arz'] = array(
 	'PdfPrint' => array( 'طبع_بى-دى_اف', 'تصدير_بى_دى_اف' ),
 );
 
+/** Avaric (авар) */
+$specialPageAliases['av'] = array(
+	'PdfPrint' => array( 'Создание_Pdf' ),
+);
+
 /** Chechen (нохчийн) */
 $specialPageAliases['ce'] = array(
 	'PdfPrint' => array( 'Кхоллар_Pdf' ),
