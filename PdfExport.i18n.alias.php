@@ -30,6 +30,11 @@ $specialPageAliases['av'] = array(
 	'PdfPrint' => array( 'Создание_Pdf' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'PdfPrint' => array( 'پی_ڈی_اف_ڈنا_بورت' ),
+);
+
 /** Chechen (нохчийн) */
 $specialPageAliases['ce'] = array(
 	'PdfPrint' => array( 'Кхоллар_Pdf' ),
