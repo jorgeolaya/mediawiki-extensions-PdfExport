@@ -20,7 +20,7 @@ $specialPageAliases['ar'] = array(
 	'PdfPrint' => array( 'طبع_بي_دي_إف', 'تصدير_بي_دي_إف' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'PdfPrint' => array( 'طبع_بى-دى_اف', 'تصدير_بى_دى_اف' ),
 );
