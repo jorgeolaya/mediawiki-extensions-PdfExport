@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Avjoska"
+			"Avjoska",
+			"Pikne"
 		]
 	},
 	"pdfprint": "PDF-i eksport",
@@ -11,8 +12,8 @@
 	"pdf_margins_label_bottom": "alaosa",
 	"pdf_print_link": "Konverdi PDFiks",
 	"pdf_submit": "Tee PDF",
-	"pdf_portrait": "Portree",
-	"pdf_landscape": "Maastik",
+	"pdf_portrait": "Püstpaigutus",
+	"pdf_landscape": "Rõhtpaigutus",
 	"pdf_pass_protect_label": "Parooli kaitsmine",
 	"pdf_pass_protect_yes": "jah",
 	"pdf_pass_protect_no": "ei",
