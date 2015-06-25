@@ -41,7 +41,6 @@ $dir = dirname(__FILE__).'/';
 $wgMessagesDirs['PdfPrint'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['PdfPrint'] = $dir.'PdfExport.i18n.php';
 $wgExtensionMessagesFiles['PdfPrintAlias'] = $dir.'PdfExport.i18n.alias.php';
-$wgSpecialPageGroups['PdfPrint'] = 'pagetools';
 
 # Global variables
 $wgPdfExportMaxImageWidth = 670; // The maximum width of images in pages

@@ -193,4 +193,8 @@ class SpecialPdf extends SpecialPage {
 		$form .= Xml::closeElement('form');
 		$wgOut->addHtml($form);
 	}
+
+	protected function getGroupName() {
+		return 'pagetools';
+	}
 }
