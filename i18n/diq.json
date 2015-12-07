@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirzali"
+		]
+	},
+	"pdf_pass_protect_yes": "eya",
+	"pdf_perm_print_yes": "eya",
+	"pdf_perm_modify_yes": "eya",
+	"pdf_perm_copy_yes": "eya",
+	"pdf_perm_annotate_yes": "eya"
+}
