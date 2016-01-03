@@ -80,7 +80,7 @@ function wfSpecialPdfNav (&$skintemplate, &$nav_urls, &$oldid, &$revid) {
 	// only display for an article, not an image
 	if ($img_page > 0 || $img_page === false) {
 		$nav_urls['pdfprint'] = array(
-			'text' => wfMsg('pdf_print_link'),
+			'text' => $skintemplate->msg('pdf_print_link')->text(),
 			'href' => $skintemplate->makeSpecialUrl('PdfPrint', "page=".wfUrlencode("{$skintemplate->thispage}" ))
 		);
 	}

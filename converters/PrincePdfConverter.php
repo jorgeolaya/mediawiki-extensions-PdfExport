@@ -42,7 +42,7 @@ class PrincePdfConverter extends PdfConverter {
 
 		// check to make sure the path is correct
 		if ( !file_exists($wgPdfExportPrincePath ) ) {
-			$this->setPageTitle( wfMsg( 'pdfprint_error' ) );
+			$this->setPageTitle( wfMessage( 'pdfprint_error' )->text() );
 			$wgOut->addWikiMsg( 'pdf_prince_error_not_installed' );
 			wfDebugLog('pdf', "Princexml is not installed correctly.");
 			return null;
@@ -66,7 +66,7 @@ class PrincePdfConverter extends PdfConverter {
 		ob_end_clean();
 
 		if (!strlen($result)) {
-			$this->setPageTitle( wfMsg( 'pdfprint_error' ) );
+			$this->setPageTitle( wfMessage( 'pdfprint_error' )->text() );
 			$wgOut->addWikiMsg( 'pdf_prince_error' );
 			wfDebugLog('pdf', "Generating PDF failed, PrinceXML was not able to create the PDF. See prince_pdf.log for details.");
 		} else {
