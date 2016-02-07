@@ -14,6 +14,7 @@
 	"pdf_margins_label_sides": "ян",
 	"pdf_margins_label_bottom": "аскы",
 	"pdf_print_link": "PDF иттереп бастыру",
+	"pdf_print_text": "PDF форматында чыгарырга теләгән битнең исемен кертегез",
 	"pdf_submit": "PDF ясау",
 	"pdf_portrait": "Портрет",
 	"pdf_landscape": "Ландшафт",
@@ -35,5 +36,8 @@
 	"pdf_perm_annotate_yes": "әйе",
 	"pdf_perm_annotate_no": "юк",
 	"pdf_size": "Кәгазь зурлыгы",
-	"pdf_filename": "Файл исеме"
+	"pdf_filename": "Файл исеме",
+	"pdf_export_no_converter_found": "PDF иттереп чыгаруны тәмин итүче мөмкинлекләрне табып булмады. Зинһар, PrinceXML, DomPdf яисә HTMLDoc тәэминатын урнаштырыгыз.",
+	"pdf_prince_error_not_installed": "PDF ясаучы PrinceXML дөрес урнаштырылмаган. Зиһар, идарәчегә хәбәр итегез.",
+	"pdf_prince_error": "PDF ясаучы программа файл төзи алмады. Әлеге сәбәпләр кабатланса, зинһар, идарәчегә хәбәр итегез."
 }
