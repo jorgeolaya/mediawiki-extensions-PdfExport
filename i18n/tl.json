@@ -37,7 +37,7 @@
 	"pdf_perm_annotate_yes": "oo",
 	"pdf_perm_annotate_no": "huwag",
 	"pdf_size": "Sukat ng papel",
-	"pdf_filename": "Pangalan ng talaksan",
+	"pdf_filename": "Pangalan ng file",
 	"pdf_export_no_converter_found": "Walang matagpuang sopwer ng Pagpapalit na PDF. Paki iluklok ang PrinceXML, DomPdf, o kaya ang HTMLDoc.",
 	"pdf_prince_error_not_installed": "Hindi tama ang pagkakaluklok ng sopwer na panlikha ng PDF. Paki makipag-ugnayan sa tagapangasiwa.",
 	"pdf_prince_error": "Hindi nagawang makalikha ng PDF ng sopwer na panlikha ng PDF. Kapag nagtagal ang suliranin, paki makipag-ugnayan sa tagapangasiwa."
