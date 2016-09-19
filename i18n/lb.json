@@ -8,6 +8,8 @@
 	"pdfexport-desc": "Transforméiert eng Säit a PDF",
 	"pdfprint": "PDF-Export",
 	"pdfprint_error": "PDF-Export – Feeler",
+	"pdf_fontface_label": "Schrëftaart",
+	"pdf_fontsize_label": "Schrëftgréisst",
 	"pdf_margins_label": "Ränner (a Millimeter)",
 	"pdf_margins_label_top": "uewen",
 	"pdf_margins_label_sides": "Säiten",
@@ -37,5 +39,6 @@
 	"pdf_size": "Pabeiergréisst",
 	"pdf_filename": "Numm vum Fichier",
 	"pdf_export_no_converter_found": "Keng PDF-Ëmwandlungssoftware gouf fonnt. Installéiert w.e.g. entweder PrinceXML, DomPdf, oder HTMLDoc.",
-	"pdf_prince_error_not_installed": "D'Software PrinceXML fir d'Uleeë vu PDF-Fichieren ass net korrekt informéiert. Kontaktéiert w.e.g. an Administrateur."
+	"pdf_prince_error_not_installed": "D'Software PrinceXML fir d'Uleeë vu PDF-Fichieren ass net korrekt informéiert. Kontaktéiert w.e.g. an Administrateur.",
+	"pdf_prince_error": "D'Software fir d'Generéiere vun engem PDF konnt de PDF net generéieren. Wann de Problem weider besteet da kontaktéiert w.e.g. en Administrateur."
 }
