@@ -4,18 +4,18 @@ if (!defined('MEDIAWIKI'))
 
 /**
  * An HTMLDoc based conversion backend.
- * 
+ *
  * Installation:
  * HTMLDoc can be downloaded from here: http://www.htmldoc.org/ or on an Ubuntu based system you can do
  * apt-get install htmldoc. Once installed, set $wgPdfExportHtmlDocPath equal to the full path to the
  * htmldoc binary.
- * 
+ *
  * @author Thomas Hempel
  * @author Christian Neubauer
  */
 class HtmlDocPdfConverter extends PdfConverter {
 	/**
-	 * Sets up any necessary command line options. 
+	 * Sets up any necessary command line options.
 	 * @param Array $options An array of options.
 	 */
 	function initialize (&$options) {
@@ -25,7 +25,7 @@ class HtmlDocPdfConverter extends PdfConverter {
 		} else {
 			$options['orientation'] = " --portrait ";
 		}
-		
+
 		// Setup permissions
 		$perms = array();
 		$options['permissions'] = '';
@@ -47,7 +47,7 @@ class HtmlDocPdfConverter extends PdfConverter {
 			} else {
 				$options['permissions'] .= '--permissions ' . implode( ',', $perms ) . ' --encryption';
 			}
-			
+
 			if( $options['owner_pass'] != '' ) {
 				$options['permissions'] .= ' --owner-password ' . $options['owner_pass'];
 			}
@@ -144,11 +144,12 @@ class HtmlDocPdfConverter extends PdfConverter {
 		if (is_null($title) || !$title->userCan( 'read' )) {
 			return null;
 		}
-		$article = new Article($title);
+		$article = new Article( $title );
 		$parserOptions = ParserOptions::newFromUser($wgUser);
 		$parserOptions->setEditSection(false);
 		$parserOptions->setTidy(true);
-		$parserOutput = $wgParser->parse($article->preSaveTransform("__NOTOC__\n\n".$article->getContent())."\n\n", $title, $parserOptions);
+		$content = $article->getContentObject();
+		$parserOutput = $wgParser->parse($article->preSaveTransform("__NOTOC__\n\n" . ContentHandler::getContentText( $content ) ) . "\n\n", $title, $parserOptions);
 
 		$bhtml = $parserOutput->getText();
 		// XXX Hack to thread the EUR sign correctly
