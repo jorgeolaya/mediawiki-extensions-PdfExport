@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kalan"
+			"Kalan",
+			"Kaganer"
 		]
 	},
 	"pdfexport-desc": "Преобразует страницу в формат PDF",
@@ -22,7 +23,7 @@
 	"pdf_pass_protect_yes": "да",
 	"pdf_pass_protect_no": "нет",
 	"pdf_owner_pass_label": "Пароль владельца",
-	"pdf_user_pass_label": "Пароль пользователя",
+	"pdf_user_pass_label": "Пароль к учётной записи",
 	"pdf_perm_print_label": "Разрешить печать?",
 	"pdf_perm_print_yes": "да",
 	"pdf_perm_print_no": "нет",
