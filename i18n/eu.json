@@ -2,18 +2,44 @@
 	"@metadata": {
 		"authors": [
 			"පසිඳු කාවින්ද",
-			"Subi"
+			"Subi",
+			"Theklan"
 		]
 	},
+	"pdfexport-desc": "Orrialdea PDF gisa renderizatu",
+	"pdfprint": "PDFa esportatu",
+	"pdfprint_error": "PDFa esportat - Akatsa",
+	"pdf_fontface_label": "Tipografia",
+	"pdf_fontsize_label": "Letra tamaina",
+	"pdf_margins_label": "Marginak (milimetrotan)",
+	"pdf_margins_label_top": "goiburua",
+	"pdf_margins_label_sides": "alboak",
+	"pdf_margins_label_bottom": "behealdea",
 	"pdf_print_link": "Inprimatu PDF gisa",
+	"pdf_print_text": "Sartu PDF gisa esportatu nahi duzun orrialdearen izenburua",
+	"pdf_submit": "PDFa egin",
+	"pdf_portrait": "Bertikala",
+	"pdf_landscape": "Horizontala",
+	"pdf_pass_protect_label": "Pasahitz bidezko babesa",
 	"pdf_pass_protect_yes": "bai",
 	"pdf_pass_protect_no": "ez",
+	"pdf_owner_pass_label": "Jabearen pasahitza",
+	"pdf_user_pass_label": "Erabiltzailearen pasahitza",
+	"pdf_perm_print_label": "Inprimatzea baimendu?",
 	"pdf_perm_print_yes": "bai",
 	"pdf_perm_print_no": "ez",
+	"pdf_perm_modify_label": "Eraldatzea baimendu?",
 	"pdf_perm_modify_yes": "bai",
 	"pdf_perm_modify_no": "ez",
+	"pdf_perm_copy_label": "Testaua kopiatzen baimendu?",
 	"pdf_perm_copy_yes": "bai",
 	"pdf_perm_copy_no": "ez",
+	"pdf_perm_annotate_label": "Anotazioak baimendu?",
 	"pdf_perm_annotate_yes": "bai",
-	"pdf_perm_annotate_no": "ez"
+	"pdf_perm_annotate_no": "ez",
+	"pdf_size": "Paperaren tamaina",
+	"pdf_filename": "Fitxategiaren izena",
+	"pdf_export_no_converter_found": "Ez da aurkitu PDF konbertsio softwarerik. Mesedez, instalatu ezazu PrinceXML, DomPdf edo HTMLDoc.",
+	"pdf_prince_error_not_installed": "PrinceXML PDF sorrera softwarea ez da zuzen instalatu. Mesedez, kontakta ezazu administratzailearekin.",
+	"pdf_prince_error": "PDF sorrera softwarea ez da gai izan PDFa sortzeko. Arazoak jarraitzen badu, kontakata ezazu administratzailearekin, mesedez."
 }
