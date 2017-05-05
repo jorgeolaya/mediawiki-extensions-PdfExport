@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Armando-Martin",
-			"Macofe"
+			"Macofe",
+			"Fitoschido"
 		]
 	},
 	"pdfexport-desc": "Renderiza una página en formato PDF",
 	"pdfprint": "Exportación a formato PDF",
 	"pdfprint_error": "Exportación a formato PDF - Error",
-	"pdf_fontface_label": "Fuente de letra",
+	"pdf_fontface_label": "Tipo de letra",
 	"pdf_fontsize_label": "Tamaño de letra",
 	"pdf_margins_label": "Márgenes (se muestran en milímetros)",
 	"pdf_margins_label_top": "superior",
